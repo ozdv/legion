@@ -16,6 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       <body className={inter.className}>{children}</body>
     </html>
   );
