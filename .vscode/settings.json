@@ -1,0 +1,11 @@
+{
+  "editor.codeActionsOnSave": {
+    "editor.formatOnSave": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "search.exclude": {
+    "**/node_modules/*": true,
+    "**/yarn.lock": true,
+    ".gitignore": true
+  }
+}
