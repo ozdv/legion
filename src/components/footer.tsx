@@ -1,9 +1,8 @@
-
 import Link from "next/link";
 import { Container } from "./container";
 import NavLink from "./navLink";
 
-const Footer =() => {
+const Footer = () => {
   return (
     <footer className="bg-blue-100">
       <Container>
@@ -53,6 +52,6 @@ const Footer =() => {
       </Container>
     </footer>
   );
-}
+};
 
 export default Footer;
