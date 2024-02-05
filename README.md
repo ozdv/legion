@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Legion of Mary - Calgary
 
-## Getting Started
+This is a repository for the websited of the Legion of Mary in Calgary, Canada.
 
-First, run the development server:
+It is currently being hosted on Amplify at [a temporary domain](https://5214735.xyz/) until we launch
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Setup
+
+To install:
+
+```
+yarn
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To run:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Also check out the other scripts in the [package.json]("/package.json") file
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+### Built with
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- ReactJS
+  - Good documentation to checkout: [Bulletproof React](https://github.com/alan2207/bulletproof-react)
+- Typescript
+- TailwindCSS
+- NextJS v14
+  - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+  - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- NodeJS
+- Yarn package manager
+- TailwindUI component library
+  - [Catalyst](https://tailwindui.com/templates/catalyst)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Linters
 
-## Deploy on Vercel
+You will have to install ESLint and Prettier globally, as well as use their extensions if using VSCode.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Inspiration:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Legion of Mary](https://www.legionofmary.ie/)
+- [Vancouver Diocese](https://www.hrvancouvercomitium.com/)
+- [Toronto Diocese](https://legionofmarytorontosenatus.com/)
+- [Montreal Diocese](https://www.smlm.org/)
+- [Calgary St Bernards parish](https://www.stbernardsparish.ca/legion-of-mary/)
+
+## Resources
+
+[Handbook](https://www.legionofmary.ie/images/uploads/files/Official_Handbook_of_the_Legion_of_Mary_2014_-_as_updated_January_2022.pdf)
