@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Container } from "./container";
-import NavLink from "./navLink";
+import NavLink from "./header/navLink";
 
 const Footer = () => {
   return (

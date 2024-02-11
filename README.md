@@ -35,6 +35,7 @@ Also check out the other scripts in the [package.json]("/package.json") file
 - Yarn package manager
 - TailwindUI component library
   - [Catalyst](https://tailwindui.com/templates/catalyst)
+  - [Documentation for Catalyst](https://catalyst.tailwindui.com/docs)
 
 ### Linters
 

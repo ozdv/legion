@@ -1,12 +1,13 @@
 "use client";
 
 import { Popover, Transition } from "@headlessui/react";
-import clsx from "clsx";
 import Link from "next/link";
 import { Fragment } from "react";
-import { Container } from "./container";
+import { Container } from "../container";
+import { ThemeToggle } from "../themeToggle";
+import MobileNavIcon from "./mobileNavIcon";
+import MobileNavLink from "./mobileNavLink";
 import NavLink from "./navLink";
-import { ThemeToggle } from "./themeToggle";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -15,51 +16,6 @@ const navItems = [
   { label: "Contact", href: "contact" },
   { label: "About", href: "about" },
 ];
-
-function MobileNavLink({
-  href,
-  children,
-}: {
-  href: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <Popover.Button
-      as={Link}
-      href={href}
-      className="flex items-center whitespace-nowrap rounded px-6 py-2 font-medium text-white transition-colors duration-200 hover:text-white lg:px-0 lg:py-0 lg:text-sm"
-    >
-      {children}
-    </Popover.Button>
-  );
-}
-
-function MobileNavIcon({ open }: { open: boolean }) {
-  return (
-    <svg
-      aria-hidden="true"
-      className="h-3.5 w-3.5 overflow-visible stroke-gray-900 dark:stroke-white"
-      fill="none"
-      strokeWidth={2}
-      strokeLinecap="round"
-    >
-      <path
-        d="M0 1H14M0 7H14M0 13H14"
-        className={clsx(
-          "origin-center transition",
-          open && "scale-90 opacity-0"
-        )}
-      />
-      <path
-        d="M2 2L12 12M12 2L2 12"
-        className={clsx(
-          "origin-center transition",
-          !open && "scale-90 opacity-0"
-        )}
-      />
-    </svg>
-  );
-}
 
 function MobileNavigation() {
   return (
@@ -93,15 +49,13 @@ function MobileNavigation() {
         >
           <Popover.Panel
             as="div"
-            className="absolute inset-x-0 top-full flex origin-top flex-col rounded-2xl border border-white/10 bg-gray-900 p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5 backdrop-blur backdrop-filter"
+            className="absolute inset-x-0 top-full flex origin-top flex-col rounded-2xl border border-white/10 bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5 backdrop-blur backdrop-filter dark:bg-gray-900"
           >
             {navItems.map((navItem) => (
               <MobileNavLink href={navItem.href} key={navItem.href}>
                 {navItem.label}
               </MobileNavLink>
             ))}
-            <hr className="m-2 border-white/10" />
-            {/* <MobileNavLink href="/login">Sign in</MobileNavLink> */}
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
@@ -119,7 +73,7 @@ const Header = () => {
               href="/"
               aria-label="Home"
               scroll={false}
-              className="text-xl font-bold text-slate-700 hover:text-indigo-600 dark:text-slate-200 dark:hover:text-indigo-400"
+              className="text-xl font-bold text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400"
             >
               Legion of Mary
             </Link>
@@ -132,10 +86,6 @@ const Header = () => {
             </div>
           </nav>
           <div className="flex items-center gap-x-5">
-            <div className="hidden md:block">
-              {/* <NavLink href="/login">Sign in</NavLink> */}
-            </div>
-
             <ThemeToggle />
             <div className="-mr-1 md:hidden">
               <MobileNavigation />
