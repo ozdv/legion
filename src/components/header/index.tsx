@@ -3,11 +3,11 @@
 import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
 import { Fragment } from "react";
-import { Container } from "../container";
-import { ThemeToggle } from "../themeToggle";
+import { Container } from "../shared/container";
 import MobileNavIcon from "./mobileNavIcon";
 import MobileNavLink from "./mobileNavLink";
 import NavLink from "./navLink";
+import { ThemeToggle } from "./themeToggle";
 
 const navItems = [
   { label: "Home", href: "/" },

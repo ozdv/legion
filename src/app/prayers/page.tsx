@@ -1,6 +1,6 @@
-import { Container } from "@/components/container";
 import FrankDuff from "@/components/prayers/frankDuff";
 import LegionPrayer from "@/components/prayers/legionPrayer";
+import { Container } from "@/components/shared/container";
 import { Metadata } from "next";
 import Image from "next/image";
 import catena from "../../assets/catena.jpg";

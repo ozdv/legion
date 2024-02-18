@@ -1,6 +1,6 @@
-import { Button } from "@/components/button";
-import { Container } from "@/components/container";
 import { Layout } from "@/components/layout";
+import { Button } from "@/components/shared/button";
+import { Container } from "@/components/shared/container";
 
 export default function NotFound() {
   return (

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Container } from "./container";
 import NavLink from "./header/navLink";
+import { Container } from "./shared/container";
 
 const Footer = () => {
   return (
