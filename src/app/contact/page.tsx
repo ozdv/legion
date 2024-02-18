@@ -1,8 +1,12 @@
 import { Container } from "@/components/container";
+import { Metadata } from "next";
 
-type Props = {};
-// todo
-const Contact = (props: Props) => {
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Contact our Legion officers",
+};
+
+const Contact = () => {
   return (
     <Container className="">
       <div className="flex flex-col">

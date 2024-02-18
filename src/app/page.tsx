@@ -1,5 +1,10 @@
-"use client";
 import { Container } from "@/components/container";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description: "",
+};
 
 export default function Home() {
   return (

@@ -16,7 +16,8 @@ export const metadata: Metadata = {
     template: "%s - Legion of Mary Calgary",
     default: "Legion of Mary Calgary",
   },
-  description: "Diocese of Calgary Legion of Mary",
+  description:
+    "The Diocese of Calgary Legion of Mary website for the Queen of the Most Holy Rosary Curia and the Mary Mediatrix of All Graces Curia",
 };
 
 export default function RootLayout({
