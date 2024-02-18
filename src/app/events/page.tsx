@@ -147,7 +147,7 @@ const Events = () => {
                   {e.description}
                 </p>
               </div>
-              <p className="mt-2 hidden w-32 sm:ml-6 sm:mt-0 sm:flex-none">
+              <p className="mt-2 hidden w-32 sm:ml-6 sm:mt-0 sm:flex">
                 {e.allDay ? (
                   "All day"
                 ) : (
@@ -191,7 +191,7 @@ const Events = () => {
                   {e.description}
                 </p>
               </div>
-              <p className="mt-2 hidden w-32 sm:ml-6 sm:mt-0 sm:flex-none">
+              <p className="mt-2 hidden w-32 flex-none sm:ml-6 sm:mt-0 sm:flex ">
                 {e.allDay ? (
                   "All day"
                 ) : (
