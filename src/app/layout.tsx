@@ -1,4 +1,5 @@
 import Header from "@/components/header";
+import UnderConstruction from "@/components/underConstruction";
 import "@/styles/globals.css";
 import clsx from "clsx";
 import type { Metadata } from "next";
@@ -35,6 +36,8 @@ export default function RootLayout({
         <Providers>
           <Header />
           <main>{children}</main>
+          <UnderConstruction /> 
+          {/* Remove ^ */}
         </Providers>
       </body>
     </html>

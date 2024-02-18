@@ -1,6 +1,6 @@
 import Footer from "./footer";
-import Header from "./header";
 
+// only used in not-found ?
 export function Layout({
   children,
   showFooter = true,
@@ -10,7 +10,7 @@ export function Layout({
 }) {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main className="flex-auto">{children}</main>
       {showFooter && <Footer />}
     </>
