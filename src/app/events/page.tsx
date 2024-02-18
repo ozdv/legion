@@ -93,7 +93,7 @@ const formatDate = (date: Date) => {
 
 const Events = () => {
   return (
-    <Container className="mt-4 md:mt-6">
+    <Container>
       <section>
         <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-100">
           Legion Functions

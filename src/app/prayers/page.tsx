@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const Prayers = () => {
   return (
-    <Container className="flex flex-col items-center space-y-4 pt-4">
+    <Container className="flex flex-col items-center space-y-4">
       <div className="header">
         <title className="text-center font-bold text-slate-700 dark:text-slate-200 md:text-2xl lg:text-3xl">
           Legion of Mary Prayers
