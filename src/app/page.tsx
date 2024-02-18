@@ -1,16 +1,9 @@
 import { Container } from "@/components/container";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Home",
-  description: "",
-};
 
 export default function Home() {
   return (
-    <Container className="" nopadding>
+    <Container className="">
       <div className="flex flex-col">
-        {/* <PrayerSection /> */}
         <div>announcements</div>
         <div>about here</div>
         <div className="flex flex-col">
