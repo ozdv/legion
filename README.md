@@ -44,6 +44,7 @@ You will have to install ESLint and Prettier globally, as well as use their exte
 ## Inspiration:
 
 - [Legion of Mary](https://www.legionofmary.ie/)
+- [Durham Diocese](https://www.legionofmarydurham.ca/)
 - [Vancouver Diocese](https://www.hrvancouvercomitium.com/)
 - [Toronto Diocese](https://legionofmarytorontosenatus.com/)
 - [Montreal Diocese](https://www.smlm.org/)

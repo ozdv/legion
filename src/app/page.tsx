@@ -1,3 +1,4 @@
+import { Announcements, Banner, Description, FAQ } from "@/components/hero";
 import { Container } from "@/components/shared/container";
 import { Metadata } from "next";
 
@@ -7,14 +8,12 @@ export const metadata: Metadata = {
 };
 export default function Home() {
   return (
-    <Container className="">
+    <Container className="" nopadding horizontalOnly>
       <div className="flex flex-col">
-        <div>announcements</div>
-        <div>about here</div>
-        <div className="flex flex-col">
-          <p className="">description about LOM here</p>
-          <p className="">description about Diocese LOM here</p>
-        </div>
+        <Banner />
+        <Announcements />
+        <FAQ />
+        <Description />
       </div>
     </Container>
   );
