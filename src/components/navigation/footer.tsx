@@ -1,31 +1,29 @@
 import Image from "next/image";
-import Link from "next/link";
 import vexillium from "../../assets/vexillium.png";
 import { Container } from "../shared/container";
+import { navItems } from "./navItems";
 import NavLink from "./navLink";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-100">
-      <Container>
-        <div className="py-16">
-          <Link
-            href="/"
-            aria-label="Home"
-            scroll={false}
-            className="group flex flex-row items-center space-x-4"
-          >
-            <Image src={vexillium} alt="vexillium" className="h-8 w-auto" />
+    <footer className="border-t">
+      <Container horizontalOnly>
+        <div className="flex flex-row-reverse justify-between py-8 sm:flex-col">
+          <div className="flex w-full justify-end sm:justify-center">
+            <Image
+              src={vexillium}
+              alt="vexillium"
+              className="h-32 w-16 sm:h-16 sm:w-8"
+            />
+          </div>
 
-            <span className="whitespace-nowrap text-xl font-bold text-slate-700 group-hover:text-blue-600 dark:text-slate-200 dark:group-hover:text-blue-400">
-              Legion of Mary
-            </span>
-          </Link>
-          <nav className="mt-10 text-sm" aria-label="quick links">
-            <div className="-my-1 flex justify-center gap-x-6">
-              <NavLink href="#features">Features</NavLink>
-              <NavLink href="#testimonials">Testimonials</NavLink>
-              <NavLink href="#pricing">Pricing</NavLink>
+          <nav className="flex justify-center sm:mt-6" aria-label="quick links">
+            <div className="flex flex-col justify-center gap-x-6 sm:flex-row">
+              {navItems.map((navItem) => (
+                <NavLink href={navItem.href} key={navItem.href}>
+                  {navItem.label}
+                </NavLink>
+              ))}
             </div>
           </nav>
         </div>
