@@ -1,4 +1,5 @@
-import Header from "@/components/header";
+import Header from "@/components/navigation";
+import Footer from "@/components/navigation/footer";
 import "@/styles/globals.css";
 import clsx from "clsx";
 import type { Metadata } from "next";
@@ -35,6 +36,7 @@ export default function RootLayout({
         <Providers>
           <Header />
           <main>{children}</main>
+          <Footer />
         </Providers>
       </body>
     </html>

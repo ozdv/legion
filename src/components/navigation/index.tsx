@@ -7,17 +7,9 @@ import vexillium from "../../assets/vexillium.png";
 import { Container } from "../shared/container";
 import MobileNavIcon from "./mobileNavIcon";
 import MobileNavLink from "./mobileNavLink";
+import { navItems } from "./navItems";
 import NavLink from "./navLink";
 import { ThemeToggle } from "./themeToggle";
-
-const navItems = [
-  { label: "Home", href: "/" },
-  { label: "Prayers", href: "prayers" },
-  { label: "Events", href: "events" },
-  { label: "Contact", href: "contact" },
-  { label: "Resources", href: "resources" },
-  { label: "About", href: "about" },
-];
 
 function MobileNavigation() {
   return (

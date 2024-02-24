@@ -1,4 +1,4 @@
-import Footer from "./footer";
+import Footer from "./navigation/footer";
 
 // only used in not-found ?
 export function Layout({
