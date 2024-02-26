@@ -5,7 +5,6 @@ const Announcements = (props: Props) => {
     <section
       id="announcements"
       aria-label="announcements from legion of mary calgary curias"
-      className="py-20 sm:py-32"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl sm:text-center">

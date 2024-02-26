@@ -8,7 +8,6 @@ const Banner = (props: Props) => {
     <section
       id="banner"
       aria-label="Main banner for legion of mary calgary curias"
-      className="py-20"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="sm:grid sm:grid-cols-12 sm:gap-x-4 lg:gap-x-8">
