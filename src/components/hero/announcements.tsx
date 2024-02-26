@@ -1,6 +1,9 @@
 type Props = {};
 
 const Announcements = (props: Props) => {
+  // https://tailwindui.com/components/marketing/sections/blog-sections
+  // announcement stuff ?  ^
+
   return (
     <section
       id="announcements"

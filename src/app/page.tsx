@@ -18,8 +18,8 @@ export default function Home() {
       <div className="flex flex-col space-y-20">
         <Banner />
         <Announcements />
-        <FAQ />
         <Description />
+        <FAQ />
         <CTA />
       </div>
     </Container>

@@ -7,6 +7,13 @@ export const metadata: Metadata = {
 };
 
 const Contact = () => {
+  // https://tailwindui.com/components/marketing/sections/team-sections
+  // Contact team people / praesidiums ^
+  // contact curias ?
+
+  // https://tailwindui.com/components/marketing/sections/contact-sections
+  // Contact forms ^
+
   return (
     <Container className="">
       <div className="flex flex-col">

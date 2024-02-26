@@ -1,6 +1,12 @@
 type Props = {};
 
 const Description = (props: Props) => {
+  // https://tailwindui.com/components/marketing/sections/header
+  // https://tailwindui.com/components/marketing/sections/stats-sections
+  // could do stats like countries, aux, active, parishes, curia, etc.
+
+  // https://tailwindui.com/components/marketing/sections/testimonials
+  // testimonies ^
   return (
     <section
       id="description"

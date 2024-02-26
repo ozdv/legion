@@ -1,6 +1,9 @@
 type Props = {};
 
 const FAQ = (props: Props) => {
+  // https://tailwindui.com/components/marketing/sections/faq-sections
+  // FAQ's
+
   return (
     <section id="faq" aria-label="faq for legion of mary calgary curias">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
