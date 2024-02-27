@@ -30,10 +30,10 @@ const FAQ = () => {
         "The basic unit of the Legion is called a praesidium, which is normally based in a parish. A parish may have more than one praesidium. To be an active legionary it is necessary to apply for membership in a praesidium, which holds a weekly meeting and allocates a weekly apostolic task to the members, who generally work in pairs. After a successful period of probation, members are called to make the Legionary Promise (this is only applicable for members over 18 years) which is directed to the Holy Spirit. Realising the necessity for a strong support of prayer, the Legion has Auxiliary members, who associate themselves with the Legion by undertaking a service of prayer in its name. The administration of the Legion is carried out through its various councils at local, regional and national level.",
     },
     {
-      question: "Do you have to be 18 years or older to join?",
+      question: "Do I have to be 18 years or older to join?",
       // handbook / winged
       answer:
-        "Absolutely. The Legion of Mary consists of special Praesidia, known as Junior Praesidiums. You can find them titled as such in our Praesidium page. You can also read more about them in chapter 36 of the Legion Handbook found in our resources page.",
+        "Not at all! The Legion of Mary has a variety of special Praesidia, including Junior Praesidiums. You can find them scattered throughout our diocese in our Praesidium page titled as such. You can also read more about them in chapter 36 of the Legion Handbook found in our resources page.",
     },
   ];
 

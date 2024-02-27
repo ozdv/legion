@@ -13,6 +13,7 @@ export default function Home() {
 
       {/* // TODO: Pending actual announcements lol  */}
       {/* <Announcements /> */}
+
       <Description />
       <FAQ />
 
