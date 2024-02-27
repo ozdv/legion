@@ -176,6 +176,12 @@ const styles = {
       "text-white [--btn-hover-overlay:theme(colors.white/10%)] [--btn-bg:theme(colors.rose.500)] [--btn-border:theme(colors.rose.600/90%)]",
       "[--btn-icon:theme(colors.rose.300)] data-[active]:[--btn-icon:theme(colors.rose.200)] data-[hover]:[--btn-icon:theme(colors.rose.200)]",
     ],
+    // todo iron out colours at some point
+    primary: [
+      "text-white [--btn-hover-overlay:theme(colors.white/10%)] [--btn-bg:theme(colors.blue.500)] [--btn-border:theme(colors.sky.600/80%)]",
+      "dark:text-slate-200 dark:[--btn-bg:theme(colors.blue.400/80%)] dark:[--btn-border:theme(colors.blue.400/80%)]",
+      "[--btn-icon:theme(colors.white/60%)] data-[active]:[--btn-icon:theme(colors.white/80%)] data-[hover]:[--btn-icon:theme(colors.white/80%)]",
+    ],
   },
 };
 
@@ -211,11 +217,7 @@ export const Button = React.forwardRef(function Button(
       <TouchTarget>{children}</TouchTarget>
     </Link>
   ) : (
-    <HeadlessButton
-      {...props}
-      className={clsx(classes, "cursor-default")}
-      ref={ref}
-    >
+    <HeadlessButton {...props} className={clsx(classes)} ref={ref}>
       <TouchTarget>{children}</TouchTarget>
     </HeadlessButton>
   );

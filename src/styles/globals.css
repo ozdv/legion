@@ -4,6 +4,9 @@
 
 @layer components {
   .border,
+  .divide,
+  .divide-y,
+  .divide-x,
   .border-r,
   .border-l,
   .border-t,
@@ -12,4 +15,8 @@
   .border-y {
     @apply border-slate-900/10 dark:border-gray-800;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }

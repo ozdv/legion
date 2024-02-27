@@ -1,22 +1,15 @@
 "use client";
-
 import { Popover, Transition } from "@headlessui/react";
+import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
+import vexillium from "../../assets/vexillium.png";
 import { Container } from "../shared/container";
 import MobileNavIcon from "./mobileNavIcon";
 import MobileNavLink from "./mobileNavLink";
+import { navItems } from "./navItems";
 import NavLink from "./navLink";
 import { ThemeToggle } from "./themeToggle";
-
-const navItems = [
-  { label: "Home", href: "/" },
-  { label: "Prayers", href: "prayers" },
-  { label: "Events", href: "events" },
-  { label: "Contact", href: "contact" },
-  { label: "Resources", href: "resources" },
-  { label: "About", href: "about" },
-];
 
 function MobileNavigation() {
   return (
@@ -67,16 +60,20 @@ function MobileNavigation() {
 const Header = () => {
   return (
     <header className="sticky top-0 z-10 w-full border-b bg-white/75 dark:bg-gray-900/50 sm:backdrop-blur sm:backdrop-filter">
-      <Container>
+      <Container horizontalOnly>
         <div className="relative flex w-full justify-between py-3">
           <nav className="flex items-center md:gap-x-12">
             <Link
               href="/"
               aria-label="Home"
               scroll={false}
-              className="text-xl font-bold text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400"
+              className="group flex flex-row items-center space-x-4"
             >
-              Legion of Mary
+              <Image src={vexillium} alt="vexillium" className="h-8 w-auto" />
+
+              <span className="whitespace-nowrap text-xl font-bold text-slate-700 group-hover:text-blue-600 dark:text-slate-200 dark:group-hover:text-blue-400">
+                Legion of Mary
+              </span>
             </Link>
             <div className="hidden md:flex md:gap-x-6">
               {navItems.map((navItem) => (
