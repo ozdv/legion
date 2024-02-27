@@ -1,4 +1,4 @@
-import { Banner, Description, FAQ } from "@/components/hero";
+import { Banner, CTA, Description, FAQ } from "@/components/hero";
 import { Container } from "@/components/shared/container";
 import { Metadata } from "next";
 
@@ -20,7 +20,7 @@ export default function Home() {
       {/* <Testimonies /> */}
 
       {/* // TODO: Pending contacts to set this up */}
-      {/* <CTA /> */}
+      <CTA />
     </Container>
   );
 }
