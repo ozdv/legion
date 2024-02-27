@@ -2,9 +2,7 @@ import Image from "next/image";
 import maryMediatrix from "../../assets/mary-mediatrix.jpg";
 import { Button } from "../shared/button";
 
-type Props = {};
-
-const Banner = (props: Props) => {
+const Banner = () => {
   return (
     <div className="relative isolate overflow-hidden pt-12">
       <div className="mx-auto max-w-7xl">

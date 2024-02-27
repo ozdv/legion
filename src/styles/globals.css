@@ -4,6 +4,9 @@
 
 @layer components {
   .border,
+  .divide,
+  .divide-y,
+  .divide-x,
   .border-r,
   .border-l,
   .border-t,

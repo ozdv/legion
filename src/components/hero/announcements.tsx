@@ -1,6 +1,4 @@
-type Props = {};
-
-const Announcements = (props: Props) => {
+const Announcements = () => {
   // https://tailwindui.com/components/marketing/sections/blog-sections
   // announcement stuff ?  ^
 

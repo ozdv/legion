@@ -1,6 +1,4 @@
-type Props = {};
-
-const Description = (props: Props) => {
+const Description = () => {
   // https://tailwindui.com/components/marketing/sections/header
   // https://tailwindui.com/components/marketing/sections/stats-sections
   // could do stats like countries, aux, active, parishes, curia, etc.
