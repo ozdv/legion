@@ -6,7 +6,7 @@ const Description = () => {
   const legionStats = [
     { id: 1, name: "Auxiliary members", value: "10,000,000+" },
     { id: 2, name: "Active members", value: "4,000,000+" },
-    { id: 3, name: "Countries with the Legion", value: "190+" },
+    { id: 3, name: "Countries with the Legion", value: "170+" },
   ];
   // https://en.wikipedia.org/wiki/Frank_Duff
 
@@ -22,13 +22,20 @@ const Description = () => {
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-slate-700 dark:text-slate-200">
-            Founded by the Servant of God Frank Duff, The Legion of Mary is a
-            Catholic apostolic association with the sanction of the Church, and
-            under the powerful leadership of Mary Immaculate, Mediatrix of All
-            Graces.
-            {/* https://www.legionofmarydurham.ca/ */}
+            Founded by The Servant of God Frank Duff (1889-1980), the Legion of
+            Mary is a lay apostolic association of Catholics who, with the
+            sanction of the Church and under the powerful leadership of Mary
+            Immaculate, Mediatrix of All Graces, serve the Church and their
+            neighbour on a voluntary basis in almost 200 countries.
+            <br />
+            <br />
+            With the approval and support of the Popes and a great many Bishops,
+            Priests and Religious, as well as the prayers and efforts of
+            legionaries, the Legion, by the grace of God, has grown into a
+            worldwide organisation with several million members.
           </p>
-
+          {/* https://www.legionofmary.ie/about */}
+          {/* in the footer at bottom ^  */}
           <dl className="Stats mt-10 grid grid-cols-1 gap-x-8 gap-y-8 text-center lg:grid-cols-3">
             {legionStats.map((stat) => (
               <div

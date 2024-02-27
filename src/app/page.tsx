@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 export default function Home() {
   return (
-    <Container className="space-y-20">
+    <Container className="mb-16 space-y-20">
       <Banner />
 
       {/* // TODO: Pending actual announcements lol  */}
