@@ -31,7 +31,7 @@ const Prayers = () => {
                   - Frank Duff
                 </p>
               </div>
-              <p className="mt-4 text-sm text-slate-700 dark:text-slate-200 sm:mt-6 sm:text-base">
+              <p className="mt-4 text-center text-sm text-slate-700 dark:text-slate-200 sm:mt-6 sm:text-base md:text-left">
                 For more info, see:{" "}
                 <Link
                   className="font-medium text-slate-700 underline hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400"
