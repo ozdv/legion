@@ -3,6 +3,7 @@ import LegionPrayer from "@/components/prayers/legionPrayer";
 import { Container } from "@/components/shared/container";
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import catena from "../../assets/catena.jpg";
 
 export const metadata: Metadata = {
@@ -12,25 +13,42 @@ export const metadata: Metadata = {
 
 const Prayers = () => {
   return (
-    <Container className="flex flex-col items-center space-y-4">
-      <div className="header">
-        <title className="text-center font-bold text-slate-700 dark:text-slate-200 md:text-2xl lg:text-3xl">
-          Legion of Mary Prayers
-        </title>
-        <p className="max-w-lg py-2 text-center italic text-slate-700 dark:text-slate-200">
-          The first prayers ever said by legionaries were the invocation and
-          prayer of the Holy Spirit, followed by the Rosary. The same prayers
-          have opened each Legion meeting ever since.
-          <br />
-          <span className="not-italic">- Frank Duff</span>
-        </p>
+    <Container>
+      <div className="relative isolate mb-4 overflow-hidden sm:mb-6">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-2xl md:mx-0 md:grid md:max-w-none md:grid-cols-2 md:gap-x-16 md:gap-y-6 lg:grid-cols-1 lg:grid-rows-1 lg:gap-x-8">
+            <h2 className="max-w-2xl text-center text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-200 sm:text-4xl md:col-span-2 md:text-left lg:col-auto">
+              Prayers of the Legion of Mary
+            </h2>
+            <div className="mx-auto mt-4 max-w-sm md:mt-0 md:max-w-2xl lg:col-end-1 lg:row-start-1">
+              <div className="text-center text-sm sm:text-base md:text-left">
+                <p className="text-slate-700 dark:text-slate-200">
+                  The first prayers ever said by legionaries were the invocation
+                  and prayer of the Holy Spirit, followed by the Rosary. The
+                  same prayers have opened each Legion meeting ever since.
+                </p>
+                <p className="pt-2 not-italic text-slate-700 dark:text-slate-200">
+                  - Frank Duff
+                </p>
+              </div>
+              <p className="mt-4 text-sm text-slate-700 dark:text-slate-200 sm:mt-6 sm:text-base">
+                For more info, see:{" "}
+                <Link
+                  className="font-medium text-slate-700 underline hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400"
+                  href="/resources"
+                >
+                  Chapter 22 in the Legion Handbook
+                </Link>
+              </p>
+            </div>
+            <Image
+              src={catena}
+              alt="Vexillum"
+              className="mx-auto mt-4 aspect-[5/8] w-fit max-w-[300px] object-cover sm:mt-6 md:mt-0 lg:row-span-2 lg:row-end-2"
+            />
+          </div>
+        </div>
       </div>
-      <Image
-        src={catena}
-        alt="Vexillum"
-        className="w-1/3"
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-      />
 
       <LegionPrayer />
       <FrankDuff />
