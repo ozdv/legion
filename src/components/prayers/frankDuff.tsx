@@ -6,7 +6,7 @@ const FrankDuff = () => {
   return (
     <Accordion
       header={
-        <h3 className="text-2xl font-bold">
+        <h3 className="text-lg font-bold md:text-2xl">
           Prayer for the Beatification of the Servant of God, Frank Duff
         </h3>
       }

@@ -6,7 +6,7 @@ type Props = {};
 const LegionPrayer = (props: Props) => {
   return (
     <Accordion
-      header={<h3 className="text-2xl font-bold">Legion Prayer</h3>}
+      header={<h3 className="text-lg font-bold md:text-2xl">Legion Prayer</h3>}
       body={
         <div className="text-sm md:text-base">
           <div className="Opening prayers pt-4">

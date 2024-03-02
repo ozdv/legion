@@ -18,9 +18,9 @@ const Accordion = (props: PropsT) => {
     index = 0,
     header,
     body,
-    defaultOpen = true,
-    headerStyles,
-    wrapperStyles,
+    defaultOpen = false,
+    headerStyles = "",
+    wrapperStyles = "",
   } = props;
 
   const headerStyle = `flex w-full items-center justify-between ${headerStyles}`;
@@ -42,7 +42,7 @@ const Accordion = (props: PropsT) => {
 
                 <ChevronDownIcon
                   className={clsx(
-                    "h-6 w-6 transform transition-transform duration-300",
+                    "h-6 w-6 flex-shrink-0 transform transition-transform duration-300",
                     { "-rotate-180": open }
                   )}
                   aria-hidden="true"
