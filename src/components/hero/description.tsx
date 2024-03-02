@@ -14,6 +14,7 @@ const Description = () => {
     <section
       id="description"
       aria-label="description for legion of mary calgary curias"
+      className="pt-20"
     >
       <div className="mx-auto max-w-2xl lg:max-w-7xl">
         <div className="mx-auto max-w-3xl lg:mx-0 lg:grid lg:max-w-none ">

@@ -6,6 +6,7 @@ const Announcements = () => {
     <section
       id="announcements"
       aria-label="announcements from legion of mary calgary curias"
+      className="pt-20"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl sm:text-center">

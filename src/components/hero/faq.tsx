@@ -38,7 +38,11 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="faq" aria-label="faq for legion of mary calgary curias">
+    <section
+      id="faq"
+      aria-label="faq for legion of mary calgary curias"
+      className="pt-20"
+    >
       <div className="mx-auto max-w-2xl divide-y border-b pb-6 lg:max-w-7xl">
         {/* ok */}
 
