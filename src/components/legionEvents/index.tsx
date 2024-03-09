@@ -26,10 +26,10 @@ const LegionEvents = () => {
                 </p>
               </div>
 
-              <p className="mt-2 w-52 whitespace-nowrap font-semibold text-slate-900 sm:mt-0">
+              <p className="mt-2 w-52 whitespace-nowrap font-semibold text-slate-900 dark:text-slate-100 sm:mt-0">
                 {e.eventName}
               </p>
-              <p className="mt-0 whitespace-nowrap text-slate-900 sm:font-semibold">
+              <p className="mt-0 whitespace-nowrap text-slate-700 dark:text-slate-200 sm:font-semibold">
                 {e.description}
               </p>
             </div>
@@ -69,10 +69,10 @@ const LegionEvents = () => {
                 </p>
               </div>
 
-              <p className="mt-2 w-52 whitespace-nowrap font-semibold text-slate-900 sm:mt-0">
+              <p className="mt-2 w-52 whitespace-nowrap font-semibold text-slate-900 dark:text-slate-100 sm:mt-0">
                 {e.eventName}
               </p>
-              <p className="mt-0 whitespace-nowrap text-slate-900 sm:font-semibold">
+              <p className="mt-0 whitespace-nowrap text-slate-900 dark:text-slate-200 sm:font-semibold">
                 {e.description}
               </p>
             </div>

@@ -38,24 +38,18 @@ const FAQ = () => {
   ];
 
   return (
-    <section
-      id="faq"
-      aria-label="faq for legion of mary calgary curias"
-      className="pt-20"
-    >
+    <section id="faq" aria-label="faq for legion of mary calgary curias">
       <div className="mx-auto max-w-2xl divide-y border-b pb-6 lg:max-w-7xl">
-        {/* ok */}
-
-        <h2 className="max-w-2xl text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-200 sm:text-4xl">
+        <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-200 sm:text-4xl">
           Frequently asked questions
         </h2>
-        <dl className="mt-6 space-y-6 divide-y divide-gray-900/10">
+        <dl className="mt-6 space-y-6 divide-y md:mt-12">
           {faqs.map((faq) => (
             <Disclosure as="div" key={faq.question} className="pt-6">
               {({ open }) => (
                 <>
                   <dt>
-                    <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900">
+                    <Disclosure.Button className="flex w-full items-start justify-between text-left text-slate-800 dark:text-slate-300">
                       <span className="text-base font-semibold leading-7">
                         {faq.question}
                       </span>
@@ -69,7 +63,7 @@ const FAQ = () => {
                     </Disclosure.Button>
                   </dt>
                   <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                    <p className="text-base leading-7 text-gray-600">
+                    <p className="text-base leading-7 text-slate-700 dark:text-slate-400">
                       {faq.answer}
                     </p>
                   </Disclosure.Panel>
