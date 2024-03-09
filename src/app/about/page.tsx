@@ -4,6 +4,7 @@ import { Metadata } from "next";
 interface SectionProps {
   title: string;
   children: React.ReactNode;
+
 }
 
 export const metadata: Metadata = {
@@ -13,19 +14,20 @@ export const metadata: Metadata = {
 
 const Section: React.FC<SectionProps> = ({ title, children }) => (
   <div className="mb-8">
-    <h2 className="text-2xl font-semibold mb-2 text-gray-800">{title}</h2>
-    <div className="text-gray-600">{children}</div>
+    <h2 className="text-2xl font-semibold mb-2">{title}</h2>
   </div>
 );
 
 const About = () => {
   return (
     <>
-       <Container className="max-w-4xl mx-auto p-4">
-        <h1 className="text-3xl font-bold text-center mb-6">The Legion of Mary</h1>
+       <Container className="max-w-4xl mx-auto p-4 space-y-6">
+        <h1 className="text-4xl font-bold text-center mb-12">The Legion of Mary</h1>
+        <Section title="Introduction">
         <p className="mb-4">
           The object of the Legion of Mary is the glory of God through the holiness of its members developed by prayer and active co-operation in Mary’s and the Church’s work. The unit of the Legion of Mary is called a praesidium, which holds a weekly meeting, where prayer is intermingled with reports and discussion. Persons who wish to join the Legion must apply for membership in a Praesidium. The Legion sees as its priority the spiritual and social welfare of each individual. The members participate in the life of the parish through visitation of families, the sick, both in their homes and in hospitals and through collaboration in every apostolic and missionary undertaking sponsored by the parish. Every legionary is required to carry out a weekly apostolic work in the spirit of faith and in union with Mary.
         </p>
+        </Section>
         <p className="mb-4">
           The Legion of Mary is a lay apostolic association of Catholics who, with the sanction of the Church and under the powerful leadership of Mary Immaculate, Mediatrix of All Graces, serve the Church and their neighbour on a voluntary basis in about 170 countries. The first meeting of the Legion of Mary took place in Myra House, Francis Street, Dublin, Ireland, on 7 September, 1921. This meeting was to have very beneficial consequences for the mission of the Catholic Church and, in a special way, for millions of members of Christ’s lay faithful who would serve in the Legion and for those who would be served by the legionary apostolate. Many persons outside the Catholic Church would also benefit from that apostolate. With the approval and support of the Popes and a great many Bishops, Priests and Religious, as well as the prayers and efforts of legionaries, the Legion, by the grace of God, has grown into a worldwide organisation with several million members.
         </p>
