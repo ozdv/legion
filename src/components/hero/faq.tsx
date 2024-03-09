@@ -72,8 +72,6 @@ const FAQ = () => {
             </Disclosure>
           ))}
         </dl>
-
-        {/* ok */}
       </div>
     </section>
   );
