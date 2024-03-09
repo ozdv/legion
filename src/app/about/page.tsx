@@ -1,10 +1,22 @@
 import { Container } from "@/components/shared/container";
 import { Metadata } from "next";
 
+interface SectionProps {
+  title: string;
+  children: React.ReactNode;
+}
+
 export const metadata: Metadata = {
   title: "About",
   description: "Learn more about the Legion of Mary",
 };
+
+const Section: React.FC<SectionProps> = ({ title, children }) => (
+  <div className="mb-8">
+    <h2 className="text-2xl font-semibold mb-2 text-gray-800">{title}</h2>
+    <div className="text-gray-600">{children}</div>
+  </div>
+);
 
 const About = () => {
   return (
