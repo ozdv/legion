@@ -18,6 +18,8 @@ const Section: React.FC<SectionProps> = ({ title, children }) => (
   </div>
 );
 
+// all of the text found below can be found from the following page: https://www.legionofmary.ie/about
+
 const About = () => {
   return (
     <>
