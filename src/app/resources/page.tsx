@@ -1,5 +1,6 @@
 import { Container } from "@/components/shared/container";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Resources",
@@ -8,17 +9,65 @@ export const metadata: Metadata = {
 
 const Resources = () => {
   const resources = [
-    { title: "", url: "https://www.legionofmarytidewater.com/docs/hb05.pdf" },
+    {
+      title: "Official Handbook",
+      url: "https://www.legionofmarytidewater.com/docs/hb05.pdf",
+    },
+    {
+      title: "Calgary Diocese",
+      url: "https://www.catholicyyc.ca/",
+    },
+    {
+      title: "Concilium Legionis Mariae",
+      url: "https://www.legionofmary.ie/",
+    },
+    {
+      title: "Maria Legionis",
+      url: "https://www.legionofmary.ie/search/a55d8ab0c4c06321d0bd13afa821b78d/",
+    },
+    {
+      title: "",
+      url: "",
+    },
+    {
+      title: "",
+      url: "",
+    },
+    {
+      title: "",
+      url: "",
+    },
+    {
+      title: "",
+      url: "",
+    },
+    {
+      title: "",
+      url: "",
+    },
+    {
+      title: "",
+      url: "",
+    },
   ];
 
   return (
     <Container className="">
       <div className="flex flex-col">
-        <div>Resources here</div>
-        <ul>
-          {resources.map((resource) => (
-            <li key={resource.title} className="">
-              {resource.title}
+        <h2 className="text-center text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-200 sm:text-left sm:text-4xl">
+          Resources
+        </h2>
+        <ul className="mt-4 space-y-2">
+          {resources.map((resource, idx) => (
+            <li key={resource.title + idx} className="">
+              <Link
+                target="_blank"
+                aria-label={resource.title}
+                href={resource.url}
+                className="text-lg font-medium text-slate-700 underline hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400"
+              >
+                {resource.title}
+              </Link>
             </li>
           ))}
         </ul>

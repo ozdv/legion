@@ -1,5 +1,6 @@
 import Cards from "@/components/shared/cards";
 import { Container } from "@/components/shared/container";
+import { formatPhoneNumber } from "@/helpers/formatPhoneNumbers";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,27 +13,165 @@ const Contact = () => {
     {
       name: "Mary Mediatrix of All Graces Curia",
       description: "This is the curia for North Calgary",
-      email: "cam@cam.com",
-      phone: "+1 (403) 420-6969",
+      email: "",
+      phone: "",
     },
     {
       name: "Queen of the Most Holy Rosary Curia",
       description: "This is the curia for South Calgary",
-      email: "cam@cam.com",
-      phone: "+1 (403) 420-6969",
+      email: "",
+      phone: "",
     },
     {
       name: "Korean Curia",
       description: "This is the curia for the Korean Community",
-      email: "cam@cam.com",
+      email: "",
+      phone: "",
     },
   ];
 
   const praesidiaList = [
     {
-      name: "Mater Misericordiae",
-      parish: "St. Francis Xavier Chaplaincy",
-      email: "Cam@ozdv.me",
+      name: "Mater Misericordiae (Young adults)",
+      parish: "St. Francis Xavier Chaplaincy/St. Mary's Cathedral",
+      email: "sergioplazas3b@gmail.com",
+      phone: "4036163143",
+    },
+    {
+      name: "Mary, Queen of Peace",
+      parish: "St. Mark's",
+      email: "",
+      phone: "",
+    },
+    {
+      name: "Mary Immaculate",
+      parish: "St. Mark's",
+      email: "",
+      phone: "",
+    },
+    {
+      name: "Mother of Divine Grace",
+      parish: "St. Anthony's",
+      email: "",
+      phone: "",
+    },
+    {
+      name: "Immaculate Heart of Mary",
+      parish: "Our Lady of Perpetual Help",
+      email: "",
+      phone: "",
+    },
+    {
+      name: "Mary, Mother of Good Counsel",
+      parish: "Ascension Parish",
+      email: "",
+      phone: "",
+    },
+    {
+      name: "Mystical Rose",
+      parish: "St. Patrick's Parish (Medicine Hat)",
+      email: "",
+      phone: "",
+    },
+
+    {
+      name: "Mary, Ark of the Covenant",
+      parish: "St. Luke's",
+      email: "",
+      phone: "",
+    },
+    {
+      name: "Seat of Wisdom",
+      parish: "St. Luke's",
+      email: "",
+      phone: "",
+    },
+    {
+      name: "Mary, Queen of Angels",
+      parish: "St. Bernard's",
+      email: "",
+      phone: "",
+    },
+    {
+      name: "Mary, Queen of Victory",
+      parish: "St. Patrick's",
+      email: "",
+      phone: "",
+    },
+    {
+      name: "Spiritual Vessel",
+      parish: "St. Pius X",
+      email: "",
+      phone: "",
+    },
+    {
+      name: "Our Lady of Visitation",
+      parish: "St. Thomas More",
+      email: "",
+      phone: "",
+    },
+    {
+      name: "Queen of Martyrs",
+      parish: "Canadian Martyrs",
+      email: "",
+      phone: "",
+    },
+    {
+      name: "Virgin of Virgins",
+      parish: "St. Vincent of Liem",
+      email: "",
+      phone: "",
+    },
+    {
+      name: "Our Lady of Assumption",
+      parish: "Holy Spirit Church",
+      email: "",
+      phone: "",
+    },
+
+    {
+      name: "Immaculate Mary",
+      parish: "St. Vincent Liem Church",
+      email: "",
+      phone: "",
+    },
+    {
+      name: "Mary Help of the Sick",
+      parish: "St. Mary's Church (Brooks)",
+      email: "",
+      phone: "",
+    },
+    {
+      name: "Mother of Divine Grace",
+      parish: "St. Patrick's",
+      email: "",
+      phone: "",
+    },
+  ];
+
+  const juniorPraesidiumList = [
+    {
+      name: "Sancta Maria Junior Praesidium",
+      parish: "St. Anthony's",
+      email: "",
+      phone: "",
+    },
+    {
+      name: "Mary Cause of Our Joy, Junior Praesidium",
+      parish: "Holy Spirit Church",
+      email: "",
+      phone: "",
+    },
+    {
+      name: "Mother of Our Life Junior Praesidium",
+      parish: "St. Luke's Parish",
+      email: "",
+      phone: "",
+    },
+    {
+      name: "Our Lady of Angels, Junior Praesdium",
+      parish: "St. Patrick's",
+      email: "",
       phone: "",
     },
   ];
@@ -68,7 +207,7 @@ const Contact = () => {
                 title={curia.name}
                 description={curia.description}
                 email={curia.email}
-                phone={curia.phone}
+                phone={formatPhoneNumber(curia?.phone)}
               />
             ))}
           </div>
@@ -91,7 +230,30 @@ const Contact = () => {
                 title={curia.name}
                 description={curia.parish}
                 email={curia.email}
-                phone={curia?.phone}
+                phone={formatPhoneNumber(curia?.phone)}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div className="">
+          <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 sm:text-2xl">
+            Our Junior Praesidia&apos;s
+          </h3>
+
+          <p className="mt-1 max-w-xl text-sm text-slate-700 dark:text-slate-200 sm:text-base">
+            Same as a regular Praesidium, but for those that are younger than 18
+            years of age.
+          </p>
+
+          <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-3 lg:grid-cols-3 lg:gap-8">
+            {juniorPraesidiumList.map((curia, idx) => (
+              <Cards
+                key={idx}
+                title={curia.name}
+                description={curia.parish}
+                email={curia.email}
+                phone={formatPhoneNumber(curia?.phone)}
               />
             ))}
           </div>

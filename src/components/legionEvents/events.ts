@@ -64,8 +64,9 @@ export const allEvents = [
     description: "Pending", // todo
     date: new Date("May 11 2024"),
     range: {
-      from: "Pending",
-      until: "Pending",
+      pending: true,
+      from: "",
+      until: "",
     },
     allDay: false,
   },
@@ -74,6 +75,7 @@ export const allEvents = [
     description: "Pending", // todo
     date: new Date("May 2024"),
     range: {
+      pending: true,
       from: "Pending",
       until: "Pending",
     },
@@ -84,6 +86,7 @@ export const allEvents = [
     description: "Pending", // todo
     date: new Date("October 2024"),
     range: {
+      pending: true,
       from: "Pending",
       until: "Pending",
     },

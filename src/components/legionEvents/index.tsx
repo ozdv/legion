@@ -36,9 +36,11 @@ const LegionEvents = () => {
             <p className="mt-2 hidden w-32 sm:ml-6 sm:mt-0 sm:flex">
               {e.allDay ? (
                 "All day"
+              ) : e.range.pending ? (
+                <span>Pending</span>
               ) : (
                 <>
-                  <time>{e.range.from}</time> - <time>{e.range.until}</time>
+                  <time>{e.range.from} </time> - <time> {e.range.until}</time>
                 </>
               )}
             </p>
@@ -61,9 +63,12 @@ const LegionEvents = () => {
                 <p className="w-32 flex-none sm:hidden">
                   {e.allDay ? (
                     "All day"
+                  ) : e.range.pending ? (
+                    <span>Pending</span>
                   ) : (
                     <>
-                      <time>{e.range.from}</time> - <time>{e.range.until}</time>
+                      <time>{e.range.from} </time> -{" "}
+                      <time> {e.range.until}</time>
                     </>
                   )}
                 </p>
@@ -79,9 +84,11 @@ const LegionEvents = () => {
             <p className="mt-2 hidden w-32 flex-none sm:ml-6 sm:mt-0 sm:flex ">
               {e.allDay ? (
                 "All day"
+              ) : e.range.pending ? (
+                <span>Pending</span>
               ) : (
                 <>
-                  <time>{e.range.from}</time> - <time>{e.range.until}</time>
+                  <time>{e.range.from} </time> - <time> {e.range.until}</time>
                 </>
               )}
             </p>
