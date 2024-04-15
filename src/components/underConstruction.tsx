@@ -1,15 +1,18 @@
 "use client";
 import { Dialog, DialogBody, DialogTitle } from "@/components/shared/dialog";
+import { useState } from "react";
 
 const UnderConstruction = () => {
+  const [open, setOpen] = useState(true);
+
   return (
     <>
-      <Dialog open={true} onClose={() => {}} size="sm">
+      <Dialog open={open} onClose={() => setOpen(false)} size="sm">
         <DialogTitle className="text-center">Under Construction</DialogTitle>
 
         <DialogBody className=" text-center text-sm/6 text-slate-700 dark:text-white">
           <p className="">This website is under construction.</p>
-          <p className="">Please comeback soon!</p>
+
           <p className="mt-4">If you have any concerns,</p>
           <a
             href="mailto:cam@ozdv.me?subject=Legion Of Mary Website"

@@ -19,7 +19,7 @@ const Banner = () => {
             </p>
             <div className="mt-10 flex items-center gap-x-6">
               {/* // todo bigger buttons for CTA dood */}
-              <Button>Get involved today</Button>
+              <Button href="/contact">Get involved today</Button>
               <Button href="#description" plain>
                 Learn more<span aria-hidden="true">→</span>
               </Button>

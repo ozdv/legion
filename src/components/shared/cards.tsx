@@ -18,7 +18,7 @@ const Cards = (props: Props) => {
       <p className="mt-2 text-sm text-slate-700 dark:text-slate-200">
         {description}
       </p>
-      <dl className="mt-2 flex flex-row justify-between text-sm leading-6">
+      <dl className="mt-2 flex flex-row items-center justify-between text-sm leading-6">
         <div>
           <dt className="sr-only">Email</dt>
           <dd>
