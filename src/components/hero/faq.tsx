@@ -6,7 +6,7 @@ import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
 const FAQ = () => {
   const faqs = [
     {
-      question: "Who's Frank Duff?",
+      question: "Who is Frank Duff?",
       // https://www.legionofmary.ie/causes/profile/frank-duff
       answer:
         "Frank Duff, Founder of the Legion of Mary, was born in Dublin, Ireland, on June 7, 1889. He entered the Civil Service at the age of 18. At 24 he joined the Society of St. Vincent de Paul where he was led to a deeper commitment to his Catholic faith and at the same time he acquired a great sensitivity to the needs of the poor and underprivileged. Along with a group of Catholic women and Fr. Michael Toher, Dublin Archdiocese, he formed the first praesidium of the Legion of Mary on September 7, 1921. From that date until his death, November 7, 1980, he guided the world-wide extension of the Legion with heroic dedication.",
@@ -24,7 +24,7 @@ const FAQ = () => {
         "Drawing its inspiration from the True Devotion to Mary, as taught by St. Louis Marie de Montfort, and which had a profound influence on the Founder of the Legion, the Servant of God, Frank Duff, the Legion is at the disposal of the Bishops and Priests for use in the mission of the Church. While essentially a lay association, legionaries look for spiritual and apostolic formation to priests and religious, who, as Legion Spiritual Directors, hold an honoured place in the Legion system. The Legion requires ecclesiastical approval to work in a diocese or parish. Loyalty to the Magisterium and to Ecclesiastical Authority is a basic legionary principle. The Legion aims to bring Mary to the world as the infallible means of winning the world to Jesus and legionary service is based on the doctrine of the Mystical Body of Christ so that in their fellow members and in those they serve, legionaries seek to have the Person of our Lord once again seen and served by Mary, his Mother.",
     },
     {
-      question: "What is a praesidium?",
+      question: "What even is a 'praesidium'?",
       // https://www.legionofmary.ie/about
       answer:
         "The basic unit of the Legion is called a praesidium, which is normally based in a parish. A parish may have more than one praesidium. To be an active legionary it is necessary to apply for membership in a praesidium, which holds a weekly meeting and allocates a weekly apostolic task to the members, who generally work in pairs. After a successful period of probation, members are called to make the Legionary Promise (this is only applicable for members over 18 years) which is directed to the Holy Spirit. Realising the necessity for a strong support of prayer, the Legion has Auxiliary members, who associate themselves with the Legion by undertaking a service of prayer in its name. The administration of the Legion is carried out through its various councils at local, regional and national level.",

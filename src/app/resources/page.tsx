@@ -52,9 +52,9 @@ const Resources = () => {
   ];
 
   return (
-    <Container className="">
+    <Container className="mb-10 md:mb-20">
       <div className="flex flex-col">
-        <h2 className="text-center text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-200 sm:text-left sm:text-4xl">
+        <h2 className="text-left text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl">
           Resources
         </h2>
         <ul className="mt-4 space-y-2">

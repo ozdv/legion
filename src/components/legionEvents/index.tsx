@@ -2,8 +2,8 @@ import { formatDate, futureEvents, pastEvents } from "./events";
 
 const LegionEvents = () => {
   return (
-    <section className="mt-8">
-      <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-100">
+    <section className="mt-8 sm:mt-12">
+      <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 sm:text-3xl">
         Upcoming events
       </h2>
       <ol className="divide-y divide-slate-200 text-sm leading-6 text-slate-700 dark:divide-slate-700 dark:text-slate-200">
@@ -48,7 +48,7 @@ const LegionEvents = () => {
         ))}
       </ol>
 
-      <h2 className="mt-4 text-xl font-semibold text-slate-900 dark:text-slate-100">
+      <h2 className="mt-6 text-2xl font-bold text-slate-900 dark:text-slate-100 sm:mt-12 sm:text-3xl">
         Previous Events
       </h2>
       <ol className="divide-y divide-slate-200 text-sm leading-6 text-slate-700 dark:divide-slate-700 dark:text-slate-200">

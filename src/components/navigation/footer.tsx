@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
 
           <nav className="flex justify-center sm:mt-6" aria-label="quick links">
-            <div className="flex flex-col justify-center gap-x-6 sm:flex-row">
+            <div className="flex flex-col justify-center gap-0.5 sm:flex-row sm:gap-x-6">
               {navItems.map((navItem) => (
                 <NavLink href={navItem.href} key={navItem.href}>
                   {navItem.label}

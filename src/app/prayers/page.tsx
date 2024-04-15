@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const Prayers = () => {
   return (
-    <Container>
+    <Container className="mb-10 sm:mb-20">
       <div className="relative isolate mb-4 overflow-hidden sm:mb-6">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl md:mx-0 md:grid md:max-w-none md:grid-cols-2 md:gap-x-16 md:gap-y-6 lg:grid-cols-1 lg:grid-rows-1 lg:gap-x-8">

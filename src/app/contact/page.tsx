@@ -18,8 +18,11 @@ const Contact = () => {
 
   // todo: Add all emails
   // TODO: Add all addresses
+
+  // todo: maybe make the cards buttons that open up a modal with more info/location/contact etc
+
   return (
-    <Container className="">
+    <Container className="mb-10">
       <section className="space-y-8 sm:space-y-12">
         <div className="">
           <h2 className="text-3xl font-bold text-slate-900 dark:text-slate-100 sm:text-4xl">

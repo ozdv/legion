@@ -34,7 +34,7 @@ const About = () => {
       </dl>
 
       <div className="space-y-6">
-        <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-100 md:text-3xl">
+        <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 md:text-3xl">
           Introduction
         </h2>
 
