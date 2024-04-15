@@ -23,7 +23,7 @@ const Resources = () => {
     },
     {
       title: "Maria Legionis",
-      url: "https://www.legionofmary.ie/search/a55d8ab0c4c06321d0bd13afa821b78d/",
+      url: "https://www.legionofmary.ie/news",
     },
     {
       title: "",

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <Container className="mb-16 flex flex-col space-y-20 lg:space-y-32 xl:space-y-40">
+    <Container className="mb-16 flex flex-col lg:space-y-12 xl:space-y-20">
       <Banner />
 
       {/* // TODO: Pending actual announcements lol  */}

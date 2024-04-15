@@ -9,15 +9,18 @@ const UnderConstruction = () => {
   return (
     <>
       <Dialog open={open} onClose={() => setOpen(false)} size="sm">
-        <DialogTitle className="text-center">Under Construction</DialogTitle>
+        <DialogTitle className="">Under Construction</DialogTitle>
 
-        <DialogBody className="flex flex-col text-center text-sm/6 text-slate-700 dark:text-white">
-          <p className="">If you have any concerns,</p>
+        <DialogBody className="flex flex-col text-sm/6 text-slate-700 dark:text-white">
+          <p className="">
+            This website is still being actively improved upon. If you have any
+            concerns,
+          </p>
           <a
             href="mailto:cam@ozdv.me?subject=Legion Of Mary Website"
-            className="mb-6 font-semibold text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400"
+            className="mb-6 mt-2 font-semibold text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400"
           >
-            Email me anytime!
+            Email me anytime! (cam@ozdv.me)
           </a>
           <Button
             onClick={() => {

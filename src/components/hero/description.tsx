@@ -1,20 +1,18 @@
+import { legionStats } from "@/app/constants/legionStats";
+import { Button } from "../shared/button";
+
 const Description = () => {
   // https://tailwindui.com/components/marketing/sections/header
   // https://tailwindui.com/components/marketing/sections/stats-sections
   // could do stats like countries, aux, active, parishes, curia, etc.
 
-  const legionStats = [
-    { id: 1, name: "Auxiliary members", value: "10,000,000+" },
-    { id: 2, name: "Active members", value: "4,000,000+" },
-    { id: 3, name: "Countries with the Legion", value: "170+" },
-  ];
   // https://en.wikipedia.org/wiki/Frank_Duff
 
   return (
     <section
       id="description"
       aria-label="description for legion of mary calgary curias"
-      className=""
+      className="pt-20"
     >
       <div className="mx-auto max-w-2xl lg:max-w-7xl">
         <div className="mx-auto max-w-3xl lg:mx-0 lg:grid lg:max-w-none ">
@@ -36,6 +34,11 @@ const Description = () => {
               of legionaries, the Legion, by the grace of God, has grown into a
               worldwide organisation with several million members.
             </p>
+            <div className="mt-8 flex justify-center">
+              <Button href="/about" plain>
+                Learn more<span aria-hidden="true">→</span>
+              </Button>
+            </div>
           </div>
           {/* https://www.legionofmary.ie/about */}
           {/* in the footer at bottom ^  */}

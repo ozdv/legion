@@ -1,25 +1,42 @@
+import { CTA } from "@/components/hero";
 import { Container } from "@/components/shared/container";
 import { Metadata } from "next";
+import { legionStats } from "../constants/legionStats";
 
 export const metadata: Metadata = {
   title: "About",
   description: "Learn more about the Legion of Mary",
 };
 
-const pStyles = "sm:text-base text-sm";
+const pStyles = "sm:text-base text-sm text-slate-700 dark:text-slate-200";
 
 const About = () => {
   return (
-    <>
-      <Container className="mx-auto max-w-4xl space-y-6 p-4">
-        <h1 className="mb-8 text-center text-3xl font-bold sm:mb-12 md:text-4xl">
-          The Legion of Mary
-        </h1>
-        <div className="mb-8">
-          <h2 className="mb-2 text-xl font-semibold md:text-2xl">
-            Introduction
-          </h2>
-        </div>
+    <Container className="mb-10">
+      <h1 className="text-center text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-left sm:text-4xl">
+        The Legion of Mary
+      </h1>
+
+      <dl className="Stats my-10 grid grid-cols-1 gap-x-8 gap-y-8 text-center lg:grid-cols-3">
+        {legionStats.map((stat) => (
+          <div
+            key={stat.id}
+            className="mx-auto flex max-w-xs flex-col gap-y-2 sm:gap-y-4"
+          >
+            <dt className="text-base leading-7 text-slate-700 dark:text-slate-200">
+              {stat.name}
+            </dt>
+            <dd className="order-first text-3xl font-semibold tracking-tight text-slate-900 dark:text-slate-200 sm:text-5xl">
+              {stat.value}
+            </dd>
+          </div>
+        ))}
+      </dl>
+
+      <div className="space-y-6">
+        <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-100 md:text-3xl">
+          Introduction
+        </h2>
 
         <p className={pStyles}>
           The object of the Legion of Mary is the glory of God through the
@@ -107,8 +124,9 @@ const About = () => {
           Quinn (1907-1944), Legion Envoy to East Africa; and the Servant of
           God, Alfie Lambe (1932-1959), Legion Envoy to South America.
         </p>
-      </Container>
-    </>
+      </div>
+      <CTA />
+    </Container>
   );
 };
 
