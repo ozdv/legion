@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Legion of Mary | Calgary Diocese",
   description: "Prayers for the Legion of Mary",
 };
+
 export default function Home() {
   return (
     <Container className="mb-16 flex flex-col space-y-20 lg:space-y-32 xl:space-y-40">
