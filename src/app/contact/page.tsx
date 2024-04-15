@@ -16,6 +16,8 @@ export const metadata: Metadata = {
 const Contact = () => {
   // https://legionofmaryquincycuria.weebly.com/
 
+  // todo: Add all emails
+  // TODO: Add all addresses
   return (
     <Container className="">
       <section className="space-y-8 sm:space-y-12">
