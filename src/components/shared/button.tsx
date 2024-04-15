@@ -178,8 +178,8 @@ const styles = {
     ],
     // todo iron out colours at some point
     primary: [
-      "text-white [--btn-hover-overlay:theme(colors.white/10%)] [--btn-bg:theme(colors.blue.500)] [--btn-border:theme(colors.sky.600/80%)]",
-      "dark:text-slate-200 dark:[--btn-bg:theme(colors.blue.400/80%)] dark:[--btn-border:theme(colors.blue.400/80%)]",
+      "text-white [--btn-hover-overlay:theme(colors.white/10%)] [--btn-bg:theme(colors.blue.400)] [--btn-border:theme(colors.sky.500/80%)]",
+      "dark:text-slate-200 dark:[--btn-bg:theme(colors.blue.400/80%)] dark:[--btn-border:theme(colors.blue.500/80%)]",
       "[--btn-icon:theme(colors.white/60%)] data-[active]:[--btn-icon:theme(colors.white/80%)] data-[hover]:[--btn-icon:theme(colors.white/80%)]",
     ],
   },

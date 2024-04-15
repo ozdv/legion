@@ -30,7 +30,7 @@ function MobileNavigation() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <Popover.Overlay className="fixed inset-0 bg-gray-900/50 opacity-100 backdrop-blur backdrop-filter" />
+          <Popover.Overlay className="fixed inset-0 h-screen bg-gray-900/50 opacity-100 backdrop-blur backdrop-filter" />
         </Transition.Child>
         <Transition.Child
           as={Fragment}
@@ -59,7 +59,7 @@ function MobileNavigation() {
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-10 w-full border-b bg-white/75 dark:bg-gray-900/50 sm:backdrop-blur sm:backdrop-filter">
+    <header className="sticky top-0 z-10 w-full border-b bg-white/75 backdrop-blur backdrop-filter dark:bg-gray-900/50">
       <Container horizontalOnly>
         <div className="relative flex w-full justify-between py-3">
           <nav className="flex items-center md:gap-x-12">

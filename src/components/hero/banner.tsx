@@ -17,10 +17,16 @@ const Banner = () => {
               powerful leadership of Mary Immaculate, Mediatrix of All Graces.
               {/* https://www.legionofmarydurham.ca/ */}
             </p>
-            <div className="mt-10 flex items-center gap-x-6">
-              {/* // todo bigger buttons for CTA dood */}
-              <Button href="/contact">Get involved!</Button>
-              <Button href="#description" plain>
+            {/* <div class="flex w-full flex-col justify-center gap-x-6 sm:flex-row lg:mt-0"> */}
+            <div className="mt-8 flex w-full flex-col justify-center gap-6 sm:flex-row sm:items-center sm:justify-start">
+              <Button
+                className="sm:px-8 sm:text-lg"
+                href="/contact"
+                color="primary"
+              >
+                Get involved!
+              </Button>
+              <Button href="#description" plain className="sm:text-lg">
                 Learn more<span aria-hidden="true">→</span>
               </Button>
             </div>

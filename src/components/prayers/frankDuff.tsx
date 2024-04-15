@@ -6,12 +6,12 @@ const FrankDuff = () => {
   return (
     <Accordion
       header={
-        <h3 className="text-lg font-bold md:text-2xl">
+        <h3 className="text-left text-lg font-semibold text-slate-900 dark:text-slate-200 md:text-2xl">
           Prayer for the Beatification of the Servant of God, Frank Duff
         </h3>
       }
       body={
-        <div className="pt-3 text-sm md:text-base">
+        <div className="pt-3 text-sm text-slate-800 dark:text-slate-300 md:text-base">
           <div className="Opening prayers space-y-2">
             <p>
               <b>
@@ -51,7 +51,7 @@ const FrankDuff = () => {
           </div>
         </div>
       }
-      wrapperStyles="mb-4 rounded-lg bg-slate-100 p-4 dark:bg-slate-800 sm:mb-6"
+      wrapperStyles="mb-4 rounded-lg bg-slate-50 p-4 dark:bg-slate-800 sm:mb-6"
     />
   );
 };

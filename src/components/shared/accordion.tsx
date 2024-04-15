@@ -49,6 +49,9 @@ const Accordion = (props: PropsT) => {
                 />
               </Disclosure.Button>
             </dt>
+            {open ? (
+              <div className="-mx-4 flex flex-1 border-b pt-4 dark:border-gray-700" />
+            ) : null}
             <Transition
               enter="transition duration-100 ease-out"
               enterFrom="transform scale-50 opacity-0"

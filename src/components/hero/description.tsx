@@ -16,7 +16,7 @@ const Description = () => {
     >
       <div className="mx-auto max-w-2xl lg:max-w-7xl">
         <div className="mx-auto max-w-3xl lg:mx-0 lg:grid lg:max-w-none ">
-          <h2 className="text-center text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-200 sm:text-4xl">
+          <h2 className="text-center text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl">
             What is the <span className="sm:underline">Legion of Mary?</span>
           </h2>
 
@@ -35,7 +35,7 @@ const Description = () => {
               worldwide organisation with several million members.
             </p>
             <div className="mt-8 flex justify-center">
-              <Button href="/about" plain>
+              <Button href="/about" plain className="sm:text-lg">
                 Learn more<span aria-hidden="true">→</span>
               </Button>
             </div>
