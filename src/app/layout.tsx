@@ -1,6 +1,5 @@
 import Header from "@/components/navigation";
 import Footer from "@/components/navigation/footer";
-import UnderConstruction from "@/components/underConstruction";
 import "@/styles/globals.css";
 import clsx from "clsx";
 import type { Metadata } from "next";
@@ -36,10 +35,7 @@ export default function RootLayout({
       <body className="flex min-h-full flex-col bg-white dark:bg-gray-900">
         <Providers>
           <Header />
-          <main>
-            <UnderConstruction />
-            {children}
-          </main>
+          <main>{children}</main>
           <Footer />
         </Providers>
       </body>

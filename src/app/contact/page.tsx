@@ -5,7 +5,8 @@ import { Metadata } from "next";
 import {
   curiaList,
   juniorPraesidiumList,
-  praesidiaList,
+  northPraesidiaList,
+  southPraesidiaList,
 } from "../constants/praesidiaLists";
 
 export const metadata: Metadata = {
@@ -15,9 +16,6 @@ export const metadata: Metadata = {
 
 const Contact = () => {
   // https://legionofmaryquincycuria.weebly.com/
-
-  // todo: Add all emails
-  // TODO: Add all addresses
 
   // todo: maybe make the cards buttons that open up a modal with more info/location/contact etc
 
@@ -37,7 +35,7 @@ const Contact = () => {
 
         <div className="">
           <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 sm:text-2xl">
-            Our Curia&apos;s
+            Curia&apos;s
           </h3>
           <p className="mt-1 max-w-xl text-sm text-slate-700 dark:text-slate-200 sm:text-base">
             Curia&apos;s are the governing body of two or more praesidia in a
@@ -58,7 +56,7 @@ const Contact = () => {
 
         <div className="">
           <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 sm:text-2xl">
-            Our Praesidia&apos;s
+            Praesidia&apos;s
           </h3>
 
           <p className="mt-1 max-w-xl text-sm text-slate-700 dark:text-slate-200 sm:text-base">
@@ -67,15 +65,17 @@ const Contact = () => {
           </p>
 
           <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-3 lg:grid-cols-3 lg:gap-8">
-            {praesidiaList.map((curia, idx) => (
-              <Cards
-                key={idx}
-                title={curia.name}
-                description={curia.parish}
-                email={curia.email}
-                phone={formatPhoneNumber(curia?.phone)}
-              />
-            ))}
+            {[...southPraesidiaList, ...northPraesidiaList].map(
+              (curia, idx) => (
+                <Cards
+                  key={idx}
+                  title={curia.name}
+                  description={curia.parish}
+                  email={curia.email}
+                  phone={formatPhoneNumber(curia?.phone)}
+                />
+              )
+            )}
           </div>
         </div>
 
