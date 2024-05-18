@@ -1,6 +1,7 @@
 import { Container } from "@/components/shared/container";
 import { Metadata } from "next";
 import Link from "next/link";
+import { legionResources } from "../constants/legionResources";
 
 export const metadata: Metadata = {
   title: "Resources",
@@ -8,49 +9,6 @@ export const metadata: Metadata = {
 };
 
 const Resources = () => {
-  const resources = [
-    {
-      title: "Official Handbook",
-      url: "https://www.legionofmarytidewater.com/docs/hb05.pdf",
-    },
-    {
-      title: "Calgary Diocese",
-      url: "https://www.catholicyyc.ca/",
-    },
-    {
-      title: "Concilium Legionis Mariae",
-      url: "https://www.legionofmary.ie/",
-    },
-    {
-      title: "Maria Legionis",
-      url: "https://www.legionofmary.ie/news",
-    },
-    {
-      title: "",
-      url: "",
-    },
-    {
-      title: "",
-      url: "",
-    },
-    {
-      title: "",
-      url: "",
-    },
-    {
-      title: "",
-      url: "",
-    },
-    {
-      title: "",
-      url: "",
-    },
-    {
-      title: "",
-      url: "",
-    },
-  ];
-
   return (
     <Container className="mb-10 md:mb-20">
       <div className="flex flex-col">
@@ -58,15 +16,20 @@ const Resources = () => {
           Resources
         </h2>
         <ul className="mt-4 space-y-2">
-          {resources.map((resource, idx) => (
+          {legionResources.map((resource, idx) => (
             <li key={resource.title + idx} className="">
               <Link
                 target="_blank"
                 aria-label={resource.title}
                 href={resource.url}
-                className="text-lg font-medium text-slate-700 underline hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400"
+                className="flex flex-col"
               >
-                {resource.title}
+                <span className="text-lg font-medium text-slate-700 underline hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400">
+                  {resource.title}
+                </span>
+                <span className="text-sm font-medium text-slate-700 dark:text-slate-200 sm:text-base">
+                  {resource.description}
+                </span>
               </Link>
             </li>
           ))}

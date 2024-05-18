@@ -26,7 +26,7 @@ const CTA = () => {
             >
               Reach out today!
             </Button>
-            <Button className="sm:text-lg" href="#description" plain>
+            <Button className="sm:text-lg" href="/about" plain>
               Learn more<span aria-hidden="true">→</span>
             </Button>
           </div>
