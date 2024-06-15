@@ -1,7 +1,7 @@
 import { CTA } from "@/components/hero";
 import { Container } from "@/components/shared/container";
 import { Metadata } from "next";
-import { legionStats } from "../constants/legionStats";
+import { legionStats } from "../../constants/legionStats";
 
 export const metadata: Metadata = {
   title: "About",

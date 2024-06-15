@@ -7,7 +7,7 @@ import {
   juniorPraesidiumList,
   northPraesidiumList,
   southPraesidiumList,
-} from "../constants/praesidiaLists";
+} from "../../constants/praesidiaLists";
 
 export const metadata: Metadata = {
   title: "Contact",

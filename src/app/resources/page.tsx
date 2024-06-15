@@ -1,7 +1,7 @@
 import { Container } from "@/components/shared/container";
 import { Metadata } from "next";
 import Link from "next/link";
-import { legionResources } from "../constants/legionResources";
+import { legionResources } from "../../constants/legionResources";
 
 export const metadata: Metadata = {
   title: "Resources",

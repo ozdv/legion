@@ -1,4 +1,4 @@
-import { legionStats } from "@/app/constants/legionStats";
+import { legionStats } from "@/constants/legionStats";
 import { Button } from "../shared/button";
 
 const Description = () => {
