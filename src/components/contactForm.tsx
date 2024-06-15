@@ -3,44 +3,36 @@ import { Field, Label } from "@/components/shared/fieldset";
 import { Input } from "@/components/shared/input";
 import { Textarea } from "@/components/shared/textarea";
 import clsx from "clsx";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { useFormStatus } from "react-dom";
 
 const ContactForm = () => {
-  const { pending } = useFormStatus();
-  console.log("pending", pending);
+  const router = useRouter();
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async () => {
-    console.log("submit");
+  const onSubmit = async (e: any) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+    formData.append("access_key", "bf03f3da-599a-4c6b-8ac5-2528dd56a001");
     setLoading(true);
-    fetch("https://formsubmit.co/135dc66ef37572bac69259939fd3a433", {
+    await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-    }).then(() => setLoading(false));
+      body: formData,
+    })
+      .then((request) => request.json())
+      .then((response) => {
+        if (!response.success) throw new Error("Error submitting");
+      })
+      .catch((e) => console.error(e))
+      .finally(() => {
+        setLoading(false);
+        router.push("/contact/submitted");
+      });
   };
 
   return (
-    <form action={handleSubmit} className="mx-auto mt-16 max-w-xl sm:mt-20">
-      {/* Redirect them after submission */}
-      <input
-        type="hidden"
-        name="_next"
-        value="https://legionofmarycalgary.com/contact/submitted"
-      />
-      {/* Subject line */}
-      <input type="hidden" name="_subject" value="LOM Contact" />
-      {/* Spam pattern to filter out if we need */}
-      <input
-        type="hidden"
-        name="_blacklist"
-        value="spammy pattern, banned term, phrase"
-      />
-      {/* disables captcha */}
-      <input type="hidden" name="_captcha" value="false" />
-
-      {/* Honey pot to filter spam  */}
-      <input type="text" name="_honey" className="hidden" />
-
+    <form onSubmit={onSubmit} className="mx-auto mt-16 max-w-xl sm:mt-20">
       <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
         <Field>
           <Label>First name</Label>
