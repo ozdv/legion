@@ -8,6 +8,7 @@ type Props = {
 
 const PrayerSection = (props: Props) => {
   const { href } = props;
+
   return (
     <div className="flex flex-row bg-blue-200">
       <Image

@@ -11,6 +11,10 @@ export const metadata: Metadata = {
   description: "Prayers for the Legion of Mary",
 };
 
+// "The first prayers ever said by legionaries were the invocation and
+// prayer of the Holy Spirit, followed by the Rosary. The same prayers
+// have opened each Legion meeting ever since" - pg.92
+
 const Prayers = () => {
   return (
     <Container className="mb-10 sm:mb-20">
@@ -57,7 +61,3 @@ const Prayers = () => {
 };
 
 export default Prayers;
-
-// "The first prayers ever said by legionaries were the invocation and
-// prayer of the Holy Spirit, followed by the Rosary. The same prayers
-// have opened each Legion meeting ever since" - pg.92
