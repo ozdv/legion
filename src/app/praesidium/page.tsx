@@ -10,7 +10,7 @@ import {
 } from "../../constants/praesidiaLists";
 
 export const metadata: Metadata = {
-  title: "Calgary Praesidium",
+  title: "Praesidium",
   description: "Contact our Legion officers",
 };
 

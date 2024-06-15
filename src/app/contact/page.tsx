@@ -1,107 +1,106 @@
-import Cards from "@/components/shared/cards";
 import { Container } from "@/components/shared/container";
-import { formatPhoneNumber } from "@/helpers/formatPhoneNumbers";
+import { Field, Label } from "@/components/shared/fieldset";
+import { Input } from "@/components/shared/input";
+import { Textarea } from "@/components/shared/textarea";
+import clsx from "clsx";
 import { Metadata } from "next";
-import {
-  curiaList,
-  juniorPraesidiumList,
-  northPraesidiumList,
-  southPraesidiumList,
-} from "../../constants/praesidiaLists";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact our Legion officers",
+  description: "",
 };
 
 const Contact = () => {
-  // https://legionofmaryquincycuria.weebly.com/
-  // https://tailwindui.com/components/application-ui/lists/grid-lists
-
-  // todo: maybe make the cards buttons that open up a modal with more info/location/contact etc
-
   return (
-    <Container className="mb-10">
+    <Container className="my-10">
       <section className="space-y-8 sm:space-y-12">
-        <div className="">
+        <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold text-slate-900 dark:text-slate-100 sm:text-4xl">
             Contact us
           </h2>
-          <p className="mt-1 max-w-xl text-sm text-slate-700 dark:text-slate-200 sm:text-base">
-            The Diocese of Calgary is blessed with three different Curiae with
-            over 30 active Praesidia. Persons who wish to join the Legion must
-            apply for membership in a Praesidia.
+          <p className="mt-2 text-lg text-slate-700 dark:text-slate-200">
+            If you have any questions, feel free to reach out!
           </p>
         </div>
 
-        <div className="">
-          <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 sm:text-2xl">
-            Curiae
-          </h3>
-          <p className="mt-1 max-w-xl text-sm text-slate-700 dark:text-slate-200 sm:text-base">
-            Curiae are the governing body of two or more praesidia in a
-            district.
-          </p>
-          <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-3 lg:grid-cols-3 lg:gap-8">
-            {curiaList.map((curia, idx) => (
-              <Cards
-                key={idx}
-                title={curia.name}
-                description={curia.description}
-                email={curia.email}
-                phone={formatPhoneNumber(curia?.phone)}
+        <form
+          action="https://formsubmit.co/135dc66ef37572bac69259939fd3a433"
+          method="POST"
+          className="mx-auto mt-16 max-w-xl sm:mt-20"
+        >
+          {/* Redirect them after submission */}
+          <input
+            type="hidden"
+            name="_next"
+            value="https://legionofmarycalgary.com/contact/submitted"
+          />
+          {/* Subject line */}
+          <input type="hidden" name="_subject" value="LOM Contact" />
+          {/* Spam pattern to filter out if we need */}
+          <input
+            type="hidden"
+            name="_blacklist"
+            value="spammy pattern, banned term, phrase"
+          />
+          {/* disables captcha */}
+          <input type="hidden" name="_captcha" value="false" />
+
+          {/* Honey pot to filter spam  */}
+          <input type="text" name="_honey" className="hidden" />
+
+          <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+            <Field>
+              <Label>First name</Label>
+              <Input
+                required
+                id="first-name"
+                name="First name"
+                autoComplete="given-name"
               />
-            ))}
-          </div>
-        </div>
+            </Field>
+            <Field>
+              <Label>Last name</Label>
+              <Input
+                required
+                id="last-name"
+                name="Last name"
+                autoComplete="family-name"
+              />
+            </Field>
 
-        <div className="">
-          <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 sm:text-2xl">
-            Praesidium
-          </h3>
-
-          <p className="mt-1 max-w-xl text-sm text-slate-700 dark:text-slate-200 sm:text-base">
-            The basic unit of the Legion of Mary. Where prayer is intermingled
-            with reports and discussion at a weekly meeting.
-          </p>
-
-          <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-3 lg:grid-cols-3 lg:gap-8">
-            {[...southPraesidiumList, ...northPraesidiumList].map(
-              (curia, idx) => (
-                <Cards
-                  key={idx}
-                  title={curia.name}
-                  description={curia.parish}
-                  email={curia.email}
-                  phone={formatPhoneNumber(curia?.phone)}
+            <div className="sm:col-span-2">
+              <Field>
+                <Label>Email</Label>
+                <Input
+                  required
+                  id="email"
+                  type="email"
+                  name="Email"
+                  autoComplete="email"
                 />
-              )
-            )}
+              </Field>
+            </div>
+
+            <div className="sm:col-span-2">
+              <Field>
+                <Label>Message</Label>
+                <Textarea id="message" name="Message" rows={4} />
+              </Field>
+            </div>
           </div>
-        </div>
-
-        <div className="">
-          <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 sm:text-2xl">
-            Our Junior Praesidium
-          </h3>
-
-          <p className="mt-1 max-w-xl text-sm text-slate-700 dark:text-slate-200 sm:text-base">
-            Same as a regular Praesidia, but for those that are younger than 18
-            years of age.
-          </p>
-
-          <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-3 lg:grid-cols-3 lg:gap-8">
-            {juniorPraesidiumList.map((curia, idx) => (
-              <Cards
-                key={idx}
-                title={curia.name}
-                description={curia.parish}
-                email={curia.email}
-                phone={formatPhoneNumber(curia?.phone)}
-              />
-            ))}
+          <div className="mt-10">
+            <button
+              type="submit"
+              className={clsx(
+                "delay-300focus-visible:outline block w-full rounded-md px-3.5 py-2.5 text-center text-sm font-semibold shadow-sm transition-colors focus-visible:outline-2 focus-visible:outline-offset-2",
+                "bg-sky-500 text-white hover:bg-sky-400 focus-visible:outline-sky-400",
+                "dark:bg-sky-600 dark:text-white dark:hover:bg-sky-500 dark:focus-visible:outline-sky-500"
+              )}
+            >
+              Submit
+            </button>
           </div>
-        </div>
+        </form>
       </section>
     </Container>
   );
