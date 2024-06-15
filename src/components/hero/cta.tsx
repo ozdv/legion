@@ -6,7 +6,7 @@ const CTA = () => {
   return (
     <section
       id="cta"
-      aria-label="cta for legion of mary calgary curias"
+      aria-label="cta for legion of mary calgary curiae"
       className="pt-20"
     >
       <div className="mx-auto max-w-2xl">
@@ -22,7 +22,7 @@ const CTA = () => {
           <div className="flex w-full flex-col justify-center gap-6 sm:flex-row lg:mt-0">
             <Button
               className="sm:px-8 sm:text-lg"
-              href="/contact"
+              href="/praesidium"
               color="primary"
             >
               Reach out today!

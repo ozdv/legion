@@ -21,7 +21,6 @@ export default function Home() {
       {/* // TODO: Pending testimonies lol  */}
       {/* <Testimonies /> */}
 
-      {/* // TODO: Pending contacts to set this up */}
       <CTA />
     </Container>
   );

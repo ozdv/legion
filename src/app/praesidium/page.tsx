@@ -10,11 +10,11 @@ import {
 } from "../../constants/praesidiaLists";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Calgary Praesidium",
   description: "Contact our Legion officers",
 };
 
-const Contact = () => {
+const PraesidiumPage = () => {
   // https://legionofmaryquincycuria.weebly.com/
   // https://tailwindui.com/components/application-ui/lists/grid-lists
 
@@ -25,11 +25,11 @@ const Contact = () => {
       <section className="space-y-8 sm:space-y-12">
         <div className="">
           <h2 className="text-3xl font-bold text-slate-900 dark:text-slate-100 sm:text-4xl">
-            Contact us
+            Our Legionaries
           </h2>
           <p className="mt-1 max-w-xl text-sm text-slate-700 dark:text-slate-200 sm:text-base">
             The Diocese of Calgary is blessed with three different Curiae with
-            over 30 active Praesidia. Persons who wish to join the Legion must
+            over 30 active Praesidium. Persons who wish to join the Legion must
             apply for membership in a Praesidia.
           </p>
         </div>
@@ -107,4 +107,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default PraesidiumPage;

@@ -5,7 +5,7 @@ const Announcements = () => {
   return (
     <section
       id="announcements"
-      aria-label="announcements from legion of mary calgary curias"
+      aria-label="announcements from legion of mary calgary curiae"
       className="pt-20"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

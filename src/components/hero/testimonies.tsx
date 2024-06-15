@@ -51,7 +51,7 @@ const Testimonies = () => {
   ];
 
   return (
-    <section id="faq" aria-label="faq for legion of mary calgary curias">
+    <section id="faq" aria-label="faq for legion of mary calgary curiae">
       <div className="mx-auto max-w-2xl lg:max-w-7xl">
         <h2 className="max-w-2xl text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-200 sm:text-4xl">
           Our Legionaries

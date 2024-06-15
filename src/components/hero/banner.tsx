@@ -21,7 +21,7 @@ const Banner = () => {
             <div className="mt-8 flex w-full flex-col justify-center gap-6 sm:flex-row sm:items-center sm:justify-start">
               <Button
                 className="sm:px-8 sm:text-lg"
-                href="/contact"
+                href="/praesidium"
                 color="primary"
               >
                 Get involved!

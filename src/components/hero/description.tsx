@@ -11,7 +11,7 @@ const Description = () => {
   return (
     <section
       id="description"
-      aria-label="description for legion of mary calgary curias"
+      aria-label="description for legion of mary calgary curiae"
       className="pt-20"
     >
       <div className="mx-auto max-w-2xl lg:max-w-7xl">
