@@ -8,7 +8,6 @@ type PropsT = {
   header?: ReactNode;
   body?: ReactNode;
   defaultOpen?: boolean;
-  // Styles
   headerStyles?: string;
   wrapperStyles?: string;
 };

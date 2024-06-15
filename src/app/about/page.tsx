@@ -42,15 +42,16 @@ const About = () => {
           The object of the Legion of Mary is the glory of God through the
           holiness of its members developed by prayer and active co-operation in
           Mary’s and the Church’s work. The unit of the Legion of Mary is called
-          a praesidium, which holds a weekly meeting, where prayer is
-          intermingled with reports and discussion. Persons who wish to join the
-          Legion must apply for membership in a Praesidium. The Legion sees as
-          its priority the spiritual and social welfare of each individual. The
-          members participate in the life of the parish through visitation of
-          families, the sick, both in their homes and in hospitals and through
-          collaboration in every apostolic and missionary undertaking sponsored
-          by the parish. Every legionary is required to carry out a weekly
-          apostolic work in the spirit of faith and in union with Mary.
+          a praesidium (or praesidia singular), which holds a weekly meeting,
+          where prayer is intermingled with reports and discussion. Persons who
+          wish to join the Legion must apply for membership in a Praesidia. The
+          Legion sees as its priority the spiritual and social welfare of each
+          individual. The members participate in the life of the parish through
+          visitation of families, the sick, both in their homes and in hospitals
+          and through collaboration in every apostolic and missionary
+          undertaking sponsored by the parish. Every legionary is required to
+          carry out a weekly apostolic work in the spirit of faith and in union
+          with Mary.
         </p>
 
         <p className={pStyles}>

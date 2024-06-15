@@ -24,21 +24,21 @@ export const curiaList = [
 
 export const juniorPraesidiumList = [
   {
-    name: "Sancta Maria Junior Praesidium",
+    name: "Sancta Maria Junior Praesidia",
     parish: "St. Anthony's Parish",
     email: "audmartis@hotmail.com",
     phone: "4032380448",
     address: "5340-4 St SW, Calgary AB T2V 0Z5",
   },
   {
-    name: "Mary Cause of Our Joy, Junior Praesidium",
+    name: "Mary Cause of Our Joy, Junior Praesidia",
     parish: "Holy Spirit Church Parish",
     email: "",
     phone: "",
     address: "",
   },
   {
-    name: "Mother of Our Life Junior Praesidium",
+    name: "Mother of Our Life Junior Praesidia",
     parish: "St. Luke's Parish",
     email: "",
     phone: "",
@@ -53,7 +53,7 @@ export const juniorPraesidiumList = [
   },
 ];
 
-export const southPraesidiaList = [
+export const southPraesidiumList = [
   {
     name: "Mother of Divine Grace",
     parish: "St. Anthony's Parish",
@@ -97,7 +97,7 @@ export const southPraesidiaList = [
   },
 ];
 
-export const northPraesidiaList = [
+export const northPraesidiumList = [
   {
     name: "Mary, Queen of Peace",
     parish: "St. Mark's Parish",

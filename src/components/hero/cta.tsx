@@ -15,7 +15,7 @@ const CTA = () => {
               Ready to get involved?
             </h2>
             <span className="text-2xl font-semibold text-slate-900 dark:text-slate-200">
-              Find a Praesidia near you!
+              Find a Praesidium near you!
             </span>
           </>
           <div className="flex w-full flex-col justify-center gap-6 sm:flex-row lg:mt-0">

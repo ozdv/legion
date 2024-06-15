@@ -1,8 +1,8 @@
-# Legion of Mary - Calgary
+# Legion of Mary - Calgary Diocese
 
 This is a repository for the websited of the Legion of Mary in Calgary, Canada.
 
-It is currently being hosted on Amplify at [a temporary domain](https://5214735.xyz/) until we launch
+Visit us at [www.legionofmarycalgary.com](https://www.legionofmarycalgary.com)
 
 ## Setup
 
@@ -18,13 +18,13 @@ To run:
 yarn dev
 ```
 
-Also check out the other scripts in the [package.json]("/package.json") file
+Also check out the other scripts in the [package.json](./package.json) file
 
 ## Learn More
 
 ### Built with
 
-- ReactJS
+- React
   - Good documentation to checkout: [Bulletproof React](https://github.com/alan2207/bulletproof-react)
 - Typescript
 - TailwindCSS
@@ -49,7 +49,3 @@ You will have to install ESLint and Prettier globally, as well as use their exte
 - [Toronto Diocese](https://legionofmarytorontosenatus.com/)
 - [Montreal Diocese](https://www.smlm.org/)
 - [Calgary St Bernards parish](https://www.stbernardsparish.ca/legion-of-mary/)
-
-## Resources
-
-[Handbook](https://www.legionofmary.ie/images/uploads/files/Official_Handbook_of_the_Legion_of_Mary_2014_-_as_updated_January_2022.pdf)

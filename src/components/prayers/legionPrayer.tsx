@@ -234,7 +234,7 @@ const LegionPrayer = () => {
               </p>
               <p>
                 <b>v.</b> Mary Immaculate, Mediatrix of all Graces (
-                <i>or Invocation appropriate to Praesidium</i>)
+                <i>or Invocation appropriate to Praesidia</i>)
               </p>
               <p>
                 <b>R.</b> Pray for us.

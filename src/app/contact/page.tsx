@@ -5,8 +5,8 @@ import { Metadata } from "next";
 import {
   curiaList,
   juniorPraesidiumList,
-  northPraesidiaList,
-  southPraesidiaList,
+  northPraesidiumList,
+  southPraesidiumList,
 } from "../constants/praesidiaLists";
 
 export const metadata: Metadata = {
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 
 const Contact = () => {
   // https://legionofmaryquincycuria.weebly.com/
+  // https://tailwindui.com/components/application-ui/lists/grid-lists
 
   // todo: maybe make the cards buttons that open up a modal with more info/location/contact etc
 
@@ -27,18 +28,18 @@ const Contact = () => {
             Contact us
           </h2>
           <p className="mt-1 max-w-xl text-sm text-slate-700 dark:text-slate-200 sm:text-base">
-            The Diocese of Calgary is blessed with three different Curia&apos;s,
-            with over 30 active Praesidia. Persons who wish to join the Legion
-            must apply for membership in a Praesidium.
+            The Diocese of Calgary is blessed with three different Curiae with
+            over 30 active Praesidia. Persons who wish to join the Legion must
+            apply for membership in a Praesidia.
           </p>
         </div>
 
         <div className="">
           <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 sm:text-2xl">
-            Curia&apos;s
+            Curias
           </h3>
           <p className="mt-1 max-w-xl text-sm text-slate-700 dark:text-slate-200 sm:text-base">
-            Curia&apos;s are the governing body of two or more praesidia in a
+            Curias are the governing body of two or more praesidia in a
             district.
           </p>
           <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-3 lg:grid-cols-3 lg:gap-8">
@@ -56,7 +57,7 @@ const Contact = () => {
 
         <div className="">
           <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 sm:text-2xl">
-            Praesidia&apos;s
+            Praesidium
           </h3>
 
           <p className="mt-1 max-w-xl text-sm text-slate-700 dark:text-slate-200 sm:text-base">
@@ -65,7 +66,7 @@ const Contact = () => {
           </p>
 
           <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-3 lg:grid-cols-3 lg:gap-8">
-            {[...southPraesidiaList, ...northPraesidiaList].map(
+            {[...southPraesidiumList, ...northPraesidiumList].map(
               (curia, idx) => (
                 <Cards
                   key={idx}
@@ -81,11 +82,11 @@ const Contact = () => {
 
         <div className="">
           <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 sm:text-2xl">
-            Our Junior Praesidia&apos;s
+            Our Junior Praesidium
           </h3>
 
           <p className="mt-1 max-w-xl text-sm text-slate-700 dark:text-slate-200 sm:text-base">
-            Same as a regular Praesidium, but for those that are younger than 18
+            Same as a regular Praesidia, but for those that are younger than 18
             years of age.
           </p>
 
@@ -107,5 +108,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-// https://tailwindui.com/components/application-ui/lists/grid-lists
