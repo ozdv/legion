@@ -7,6 +7,7 @@ import * as Sentry from "@sentry/nextjs";
 
 Sentry.init({
   dsn: "https://74346fba6b27c7c64b6b46dbf822506f@o4507533315670016.ingest.us.sentry.io/4507787571101696",
+  release: "legion" + process.env.npm_package_version,
 
   // Adjust this value in production, or use tracesSampler for greater control
   tracesSampleRate: 1,
