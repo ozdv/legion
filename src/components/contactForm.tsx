@@ -65,6 +65,11 @@ const ContactForm = () => {
             />
           </Field>
         </div>
+        <input
+          type="hidden"
+          name="subject"
+          value="Contact submission from Legion"
+        />
 
         <div className="sm:col-span-2">
           <Field>
