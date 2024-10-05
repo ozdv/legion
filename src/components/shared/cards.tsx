@@ -1,5 +1,3 @@
-import { Link } from "./link";
-
 type Props = {
   title: string;
   description: string;
@@ -19,7 +17,7 @@ const Cards = (props: Props) => {
         {description}
       </p>
       <dl className="mt-2 flex flex-row items-center justify-between text-sm leading-6">
-        <div>
+        {/* <div>
           <dt className="sr-only">Email</dt>
           <dd>
             <Link
@@ -29,13 +27,13 @@ const Cards = (props: Props) => {
               {email}
             </Link>
           </dd>
-        </div>
-        {phone && (
+        </div> */}
+        {/* {phone && (
           <div className="mt-1">
             <dt className="sr-only">Phone number</dt>
             <dd className="text-slate-700 dark:text-slate-200">{phone}</dd>
           </div>
-        )}
+        )} */}
       </dl>
     </div>
   );
