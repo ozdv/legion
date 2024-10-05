@@ -51,11 +51,11 @@ export const allEvents = [
   },
   {
     eventName: "Frank Duff Mass",
-    description: "St. Elizabeth of Hungary Church",
-    date: new Date("November 9 2024"), // todo could be nov 16th
+    description: "St Mary’s Cathedral, 219 - 18th Avenue SW, Calgary",
+    date: new Date("November 14 2024"),
     range: {
-      from: "9:00AM",
-      until: "~11:00AM",
+      from: "7:00PM",
+      until: "~8:00AM",
     },
     allDay: false,
   },
@@ -83,12 +83,13 @@ export const allEvents = [
   },
   {
     eventName: "October Rosary Rally",
-    description: "Pending", // todo
-    date: new Date("October 2024"),
+    description:
+      "St Mary’s Cathedral, 219 - 18th Avenue SW, Calgary. (Outside)",
+    date: new Date("October 12 2024"),
     range: {
-      pending: true,
-      from: "Pending",
-      until: "Pending",
+      pending: false,
+      from: "12:00 PM",
+      until: "1:30 PM",
     },
     allDay: false,
   },
