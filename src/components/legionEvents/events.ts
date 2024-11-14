@@ -11,7 +11,7 @@ export const allEvents = [
   },
   {
     eventName: "The Annual General Reunion",
-    description: "St. Anthony's Parish",
+    description: "St. Patrick's Parish, Calgary",
     date: new Date("December 7, 2024"),
     range: {
       from: "11:00AM",
