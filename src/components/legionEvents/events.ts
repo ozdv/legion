@@ -101,9 +101,10 @@ export const futureEvents = allEvents
   .filter((e) => todaysDate.getTime() < e.date.getTime())
   .sort((a, b) => (a.date.getTime() > b.date.getTime() ? 1 : -1));
 
+//  To display the most recent previous event first
 export const pastEvents = allEvents
   .filter((e) => todaysDate.getTime() > e.date.getTime())
-  .sort((a, b) => (a.date.getTime() > b.date.getTime() ? 1 : -1));
+  .sort((a, b) => (a.date.getTime() < b.date.getTime() ? 1 : -1));
 
 export const formatDate = (date: Date) => {
   const options: Intl.DateTimeFormatOptions = {
