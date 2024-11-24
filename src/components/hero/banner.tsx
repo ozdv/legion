@@ -1,3 +1,4 @@
+import { curiaList } from "@/constants/praesidiaLists";
 import Image from "next/image";
 import maryMediatrix from "../../assets/mary-mediatrix.jpg";
 import { Button } from "../shared/button";
@@ -16,6 +17,11 @@ const Banner = () => {
               association with the sanction of the Church, and under the
               powerful leadership of Mary Immaculate, Mediatrix of All Graces.
               {/* https://www.legionofmarydurham.ca/ */}
+            </p>
+            <p className="text-lg leading-8 text-slate-700 dark:text-slate-200">
+              The Calgary Diocese Legion of mary is home to three separate
+              Curiae. {curiaList[0].name}, {curiaList[1].name}, &{" "}
+              {curiaList[2].name}.
             </p>
             {/* <div class="flex w-full flex-col justify-center gap-x-6 sm:flex-row lg:mt-0"> */}
             <div className="mt-8 flex w-full flex-col justify-center gap-6 sm:flex-row sm:items-center sm:justify-start">

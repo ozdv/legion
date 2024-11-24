@@ -11,10 +11,10 @@ export const allEvents = [
   },
   {
     eventName: "The Annual General Reunion",
-    description: "St. Anthony's Parish",
+    description: "St Patrick’s Church",
     date: new Date("December 7, 2024"),
     range: {
-      from: "11:00AM",
+      from: "10:30AM",
       until: "3:00PM",
     },
     allDay: false,
@@ -51,7 +51,7 @@ export const allEvents = [
   },
   {
     eventName: "Frank Duff Mass",
-    description: "St Mary’s Cathedral, 219 - 18th Avenue SW, Calgary",
+    description: "St Mary’s Cathedral,",
     date: new Date("November 14 2024"),
     range: {
       from: "7:00PM",
