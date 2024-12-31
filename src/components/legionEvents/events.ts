@@ -32,7 +32,7 @@ export const allEvents = [
   {
     eventName: "The Retreat",
     description: "FCJ Center",
-    date: new Date("February 17 2024"),
+    date: new Date("February 15 2025"),
     range: {
       from: "8:30AM",
       until: "3:30PM",
