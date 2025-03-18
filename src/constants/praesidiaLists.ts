@@ -61,7 +61,7 @@ export const southPraesidiumList = [
     phone: "4033833113",
   },
   {
-    name: "Mater Misericordiae (Young adults)",
+    name: "Mater Misericordiae (Young Adults)",
     parish: "St. Francis Xavier Chaplaincy/St. Mary's Cathedral",
     email: "sergioplazas3b@gmail.com",
     phone: "4033893863",
