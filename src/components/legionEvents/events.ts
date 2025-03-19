@@ -51,11 +51,11 @@ export const allEvents = [
   },
   {
     eventName: "Frank Duff Mass",
-    description: "St Mary’s Cathedral,",
-    date: new Date("November 14 2024"),
+    description: "Holy Spirit Church, 10827 24 St SW",
+    date: new Date("November 6 2025"),
     range: {
       from: "7:00PM",
-      until: "~8:00AM",
+      until: "8:00AM",
     },
     allDay: false,
   },
