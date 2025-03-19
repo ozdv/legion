@@ -1,10 +1,10 @@
 export const allEvents = [
   {
     eventName: "The Acies",
-    description: "St. Thomas Moore parish basement",
-    date: new Date("March 23 2024"),
+    description: "Ascension Parish, 1100 Berkshire Blvd NW, Calgary, AB T3K 3M3",
+    date: new Date("March 22 2025"),
     range: {
-      from: "11:00AM",
+      from: "10:00AM",
       until: "3:00PM",
     },
     allDay: false,
