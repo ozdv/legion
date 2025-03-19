@@ -21,8 +21,8 @@ export const allEvents = [
   },
   {
     eventName: "Outdoor Function",
-    description: "Edworthy Park, Site # pending",
-    date: new Date("July 20 2024"),
+    description: "Edworthy Park, Site #3, 5050 Spruce Dr SW, Calgary, AB T3C 3B2",
+    date: new Date("July 19 2025"),
     range: {
       from: "8:45AM",
       until: "2:45PM",
