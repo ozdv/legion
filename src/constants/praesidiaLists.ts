@@ -63,7 +63,7 @@ export const southPraesidiumList = [
   {
     name: "Mater Misericordiae (Young Adults)",
     parish: "St. Francis Xavier Chaplaincy/St. Mary's Cathedral",
-    email: "sergioplazas3b@gmail.com",
+    email: "affectuminflamma@gmail.com",
     phone: "4033893863",
     address: "219-18 Ave SW, Calgary, AB. T2S 0C2",
   },
