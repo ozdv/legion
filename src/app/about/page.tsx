@@ -73,7 +73,7 @@ const About = () => {
         </p>
         <p className={pStyles}>
           Drawing its inspiration from the True Devotion to Mary, as taught by
-          St. Louis Marie de Montfort, and which had a profound influence on the
+          St. Louis Marie , and which had a profound influence on the
           Founder of the Legion, the Servant of God, Frank Duff, the Legion is
           at the disposal of the Bishops and Priests for use in the mission of
           the Church. While essentially a lay association, legionaries look for
