@@ -29,8 +29,8 @@ const PraesidiumPage = () => {
           </h2>
           <p className="mt-1 max-w-xl text-sm text-slate-700 dark:text-slate-200 sm:text-base">
             The Diocese of Calgary is blessed with three different Curiae with
-            over 30 active Praesidium. Persons who wish to join the Legion must
-            apply for membership in a Praesidia.
+            over 30 active Praesidia. Persons who wish to join the Legion must
+            apply for membership in a Praesidium.
           </p>
         </div>
 
