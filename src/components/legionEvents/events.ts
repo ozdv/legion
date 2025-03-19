@@ -11,10 +11,10 @@ export const allEvents = [
   },
   {
     eventName: "The Annual General Reunion",
-    description: "St Patrick’s Church",
-    date: new Date("December 7, 2024"),
+    description: "Our Lady of Fatima Parish, 4747 30 St SE, Calgary, AB T2B 3K5",
+    date: new Date("December 6, 2025"),
     range: {
-      from: "10:30AM",
+      from: "11:00AM",
       until: "3:00PM",
     },
     allDay: false,
