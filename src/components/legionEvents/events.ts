@@ -84,12 +84,12 @@ export const allEvents = [
   {
     eventName: "October Rosary Rally",
     description:
-      "St Mary’s Cathedral, 219 - 18th Avenue SW, Calgary. (Outside)",
-    date: new Date("October 12 2024"),
+      "St Mary’s Cathedral, 219 - 18th Avenue SW, Calgary, AB",
+    date: new Date("October 11 2025"),
     range: {
       pending: false,
       from: "12:00 PM",
-      until: "1:30 PM",
+      until: "2:00 PM",
     },
     allDay: false,
   },
