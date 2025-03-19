@@ -27,13 +27,13 @@ const FAQ = () => {
       question: "What is a 'praesidium' or a 'praesidia'?",
       // https://www.legionofmary.ie/about
       answer:
-        "The basic unit of the Legion is called a Praesidium (or Praesidia in the plural), which is normally based in a parish. A parish may have more than one praesidia. To be an active legionary it is necessary to apply for membership in a praesidia, which holds a weekly meeting and allocates a weekly apostolic task to the members, who generally work in pairs. After a successful period of probation, members are called to make the Legionary Promise (this is only applicable for members over 18 years) which is directed to the Holy Spirit. Realising the necessity for a strong support of prayer, the Legion has Auxiliary members, who associate themselves with the Legion by undertaking a service of prayer in its name. The administration of the Legion is carried out through its various councils at local, regional and national level.",
+        "The basic unit of the Legion is called a Praesidium (or Praesidia in the plural), which is normally based in a parish. A parish may have more than one praesidia. To be an active legionary it is necessary to apply for membership in a praesidia, which holds a weekly meeting and allocates a weekly apostolic task to the members, who generally work in pairs. After a successful period of probation, members are called to make the Legionary Promise (this is only applicable for members over 18 years) which is directed to the Holy Spirit. Realizing the necessity for a strong support of prayer, the Legion has Auxiliary members, who associate themselves with the Legion by undertaking a service of prayer in its name. The administration of the Legion is carried out through its various councils at local, regional and national level.",
     },
     {
       question: "Do I have to be 18 years or older to join?",
       // handbook / winged
       answer:
-        "Not at all! The Legion of Mary has a variety of special Praesidia, including Junior Praesidium. You can find them scattered throughout our diocese in our Praesidium page titled as such. You can also read more about them in chapter 36 of the Legion Handbook found in our resources page.",
+        "Not at all! The Legion of Mary has a variety of special Praesidia, including a Junior Praesidium. You can find them scattered throughout our diocese in our Praesidium page titled as such. You can also read more about them in chapter 36 of the Legion Handbook found in our resources page.",
     },
   ];
 
