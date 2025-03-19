@@ -42,7 +42,7 @@ export const allEvents = [
   {
     eventName: "The Praesidium Function",
     description: "Different for each Praesidium",
-    date: new Date("December 31 2024"),
+    date: new Date("December 31 2025"),
     range: {
       from: "",
       until: "",
