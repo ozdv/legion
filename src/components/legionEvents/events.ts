@@ -60,9 +60,9 @@ export const allEvents = [
     allDay: false,
   },
   {
-    eventName: "Edel Quinn Mass",
-    description: "Pending", // todo
-    date: new Date("May 11 2024"),
+    eventName: "Edel Quinn Mass", // unfinished
+    description: "St. Cecilia's Parish, 321 90 Ave SE, Calgary, AB",
+    date: new Date("May 8 2025"),
     range: {
       pending: true,
       from: "",
