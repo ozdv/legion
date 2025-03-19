@@ -115,7 +115,7 @@ const LegionPrayer = () => {
                 <b>R</b>. Pray for us.
               </p>
               <p>
-                <b>v.</b> St. Louis-Marie deMontfort
+                <b>v.</b> St. Louis-Marie de Montfort
               </p>
               <p>
                 <b>R.</b> Pray for us.

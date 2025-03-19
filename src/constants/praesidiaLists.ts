@@ -1,21 +1,21 @@
 export const curiaList = [
   {
     name: "Mary Mediatrix of All Graces Curia",
-    description: "This is the curia for North Calgary",
+    description: "This is the Curia for North Calgary",
     email: "",
     phone: "",
     address: "",
   },
   {
     name: "Queen of the Most Holy Rosary Curia",
-    description: "This is the curia for South Calgary",
+    description: "This is the Curia for South Calgary",
     email: "",
     phone: "",
     address: "",
   },
   {
     name: "Our Lady of Perpetual Help Curia",
-    description: "This is the curia for the Korean Community",
+    description: "This is the Curia for the Korean Community",
     email: "",
     phone: "",
     address: "",
@@ -24,21 +24,21 @@ export const curiaList = [
 
 export const juniorPraesidiumList = [
   {
-    name: "Sancta Maria Junior Praesidia",
+    name: "Sancta Maria Junior Praesidium",
     parish: "St. Anthony's Parish",
     email: "audmartis@hotmail.com",
     phone: "4032380448",
     address: "5340-4 St SW, Calgary AB T2V 0Z5",
   },
   {
-    name: "Mary Cause of Our Joy, Junior Praesidia",
+    name: "Mary Cause of Our Joy, Junior Praesidium",
     parish: "Holy Spirit Church Parish",
     email: "",
     phone: "",
     address: "",
   },
   {
-    name: "Mother of Our Life Junior Praesidia",
+    name: "Mother of Our Life Junior Praesidium",
     parish: "St. Luke's Parish",
     email: "",
     phone: "",
@@ -61,9 +61,9 @@ export const southPraesidiumList = [
     phone: "4033833113",
   },
   {
-    name: "Mater Misericordiae (Young adults)",
+    name: "Mater Misericordiae (Young Adults)",
     parish: "St. Francis Xavier Chaplaincy/St. Mary's Cathedral",
-    email: "sergioplazas3b@gmail.com",
+    email: "affectuminflamma@gmail.com",
     phone: "4033893863",
     address: "219-18 Ave SW, Calgary, AB. T2S 0C2",
   },
