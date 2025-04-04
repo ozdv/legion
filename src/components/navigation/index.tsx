@@ -46,9 +46,11 @@ function MobileNavigation() {
             className="absolute inset-x-0 top-full flex origin-top flex-col rounded-2xl border border-white/10 bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5 backdrop-blur backdrop-filter dark:bg-gray-900"
           >
             {navItems.map((navItem) => (
-              <MobileNavLink href={navItem.href} key={navItem.href}>
-                {navItem.label}
-              </MobileNavLink>
+              <Popover.Button as={Link} href={navItem.href} key={navItem.href}>
+                <MobileNavLink href={navItem.href} key={navItem.href}>
+                  {navItem.label}
+                </MobileNavLink>
+              </Popover.Button>
             ))}
           </Popover.Panel>
         </Transition.Child>
