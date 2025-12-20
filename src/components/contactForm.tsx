@@ -6,6 +6,9 @@ import clsx from "clsx";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
+// const CAMS_ACCESS_KEY = "bf03f3da-599a-4c6b-8ac5-2528dd56a001";
+const MICHAELS_ACCESS_KEY = "dd78ba39-7441-4522-a1ef-631e12db03e3";
+
 const ContactForm = () => {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
@@ -14,7 +17,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     const formData = new FormData(e.target);
-    formData.append("access_key", "bf03f3da-599a-4c6b-8ac5-2528dd56a001");
+    formData.append("access_key", MICHAELS_ACCESS_KEY);
     setLoading(true);
     await fetch("https://api.web3forms.com/submit", {
       method: "POST",
