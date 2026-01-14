@@ -11,7 +11,7 @@ export const allEvents = [
   },
   {
     eventName: "The Annual General Reunion",
-    description: "St. Patrick's / St. Bonaventure Parish, Calgary",
+    description: "St. Bonaventure Parish, Calgary",
     date: new Date("December 5, 2026"),
     range: {
       from: "10:30AM",
