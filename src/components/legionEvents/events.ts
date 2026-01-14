@@ -1,10 +1,10 @@
 export const allEvents = [
   {
     eventName: "The Acies",
-    description: "Ascension Parish, 1100 Berkshire Blvd NW, Calgary, AB T3K 3M3",
-    date: new Date("March 22 2025"),
+    description: "St. Mary's Cathedral, Calgary",
+    date: new Date("March 21, 2026"),
     range: {
-      from: "10:00AM",
+      from: "10:30AM",
       until: "3:00PM",
     },
     allDay: false,
