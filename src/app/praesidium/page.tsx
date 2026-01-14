@@ -57,7 +57,7 @@ const PraesidiumPage = () => {
 
         <div className="">
           <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 sm:text-2xl">
-            Praesidium
+            Praesidia
           </h3>
 
           <p className="mt-1 max-w-xl text-sm text-slate-700 dark:text-slate-200 sm:text-base">
