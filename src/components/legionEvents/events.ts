@@ -81,6 +81,18 @@ export const allEvents = [
     },
     allDay: false,
   },
+  {
+    eventName: "Legion of Mary Workshop",
+    description:
+      "St. Anthony Parish, Calgary",
+    date: new Date("October 24 2026"),
+    range: {
+      pending: false,
+      from: "10:00 AM",
+      until: "3:30 PM",
+    },
+    allDay: false,
+  },
 ];
 
 const todaysDate = new Date();
