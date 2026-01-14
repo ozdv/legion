@@ -10,7 +10,7 @@ import {
 } from "../../constants/praesidiaLists";
 
 export const metadata: Metadata = {
-  title: "Praesidium",
+  title: "Praesidia",
   description: "Contact our Legion officers",
 };
 

@@ -22,7 +22,7 @@ const CTA = () => {
           <div className="flex w-full flex-col justify-center gap-6 sm:flex-row lg:mt-0">
             <Button
               className="sm:px-8 sm:text-lg"
-              href="/praesidium"
+              href="/praesidia"
               color="primary"
             >
               Reach out today!
