@@ -9,13 +9,13 @@ Visit us at [www.legionofmarycalgary.com](https://www.legionofmarycalgary.com)
 To install:
 
 ```
-yarn
+pnpm
 ```
 
 To run:
 
 ```
-yarn dev
+pnpm dev
 ```
 
 Also check out the other scripts in the [package.json](./package.json) file
@@ -59,7 +59,7 @@ Also check out the other scripts in the [package.json](./package.json) file
   - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
   - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 - NodeJS
-- Yarn package manager
+- pnpm package manager
 - TailwindUI component library
   - [Catalyst](https://tailwindui.com/templates/catalyst)
   - [Documentation for Catalyst](https://catalyst.tailwindui.com/docs)
