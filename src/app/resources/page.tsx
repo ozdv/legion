@@ -23,6 +23,9 @@ const Resources = () => {
                 aria-label={resource.title}
                 href={resource.url}
                 className="flex flex-col"
+                // Adds these as properties on PostHog's autocaptured click.
+                data-ph-capture-attribute-resource-title={resource.title}
+                data-ph-capture-attribute-resource-url={resource.url}
               >
                 <span className="text-lg font-medium text-slate-700 underline hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400">
                   {resource.title}

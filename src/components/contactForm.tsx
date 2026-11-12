@@ -4,6 +4,7 @@ import { Input } from "@/components/shared/input";
 import { Textarea } from "@/components/shared/textarea";
 import clsx from "clsx";
 import { useRouter } from "next/navigation";
+import posthog from "posthog-js";
 import { useState } from "react";
 
 // const CAMS_ACCESS_KEY = "bf03f3da-599a-4c6b-8ac5-2528dd56a001";
@@ -26,8 +27,12 @@ const ContactForm = () => {
       .then((request) => request.json())
       .then((response) => {
         if (!response.success) throw new Error("Error submitting");
+        posthog.capture("contact_form_submitted", { success: true });
       })
-      .catch((e) => console.error(e))
+      .catch((e) => {
+        console.error(e);
+        posthog.capture("contact_form_submitted", { success: false });
+      })
       .finally(() => {
         setLoading(false);
         router.push("/contact/submitted");

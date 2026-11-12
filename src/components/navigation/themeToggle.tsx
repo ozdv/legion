@@ -2,6 +2,7 @@
 
 import clsx from "clsx";
 import { useTheme } from "next-themes";
+import posthog from "posthog-js";
 import { useEffect, useState } from "react";
 
 function ThemeIcon(props: React.ComponentPropsWithoutRef<"svg">) {
@@ -33,7 +34,10 @@ export function ThemeToggle() {
     <button
       type="button"
       className="group"
-      onClick={() => setTheme(otherTheme)}
+      onClick={() => {
+        setTheme(otherTheme);
+        posthog.capture("theme_toggled", { theme: otherTheme });
+      }}
     >
       <span className="sr-only">Switch to {otherTheme} theme</span>
       <ThemeIcon
