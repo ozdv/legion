@@ -1,6 +1,7 @@
 import Header from "@/components/navigation";
 import Footer from "@/components/navigation/footer";
 import "@/styles/globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import clsx from "clsx";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -34,6 +35,7 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col bg-white dark:bg-gray-900">
         <Providers>
+          <SpeedInsights />
           <Header />
           <main>{children}</main>
           <Footer />
